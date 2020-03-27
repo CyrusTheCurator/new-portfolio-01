@@ -1,0 +1,60 @@
+@import "styles";
+@import "vars";
+
+.App-header {
+  position: fixed;
+
+  background-color: @HeaderColor;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: @AccentColor2;
+  margin-bottom: 3vh;
+  border-bottom: @AccentColor3 solid 2px;
+  position: fixed;
+  z-index: 10; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  padding-bottom: 10px;
+  // min-height: 30px;
+}
+a {
+  color: @SecondaryColor;
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.25s;
+
+  &::after {
+    bottom: -2px;
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 0%;
+    transform: translateX(0);
+    display: flex;
+    justify-content: center;
+    border-bottom: @AccentColor2 2px solid;
+    transition: width ease-in 0.2s;
+  }
+
+  &:hover {
+    color: aqua;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.activeNavlink {
+  color: darkturquoise;
+  &::after {
+    width: 100%;
+  }
+}
