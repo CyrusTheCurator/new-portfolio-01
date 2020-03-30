@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import MainContentContainer from "./components/MainContentContainer";
 import { BrowserRouter as Router } from "react-router-dom";
-import morroImg from "./images/z.jpg";
+// import morroImg from "./images/z.jpg";
 
 function App() {
   return (
