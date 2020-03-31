@@ -43,6 +43,23 @@
   margin-bottom: 8vh;
   font-size: 1.2rem;
   animation: 0.6s ease-in contentSlideInFromBottom;
+  &::before {
+    width: 100px;
+    height: 100px;
+    color: yellow;
+    background-color: red;
+    content: "TESTING";
+  }
+  &:hover {
+    &::before {
+      transition: content 2s;
+
+      content: "";
+      background-color: red;
+      width: 50px;
+      height: 50px;
+    }
+  }
 
   p {
     background-color: hsla(181, 100%, 11%, 0.5);
