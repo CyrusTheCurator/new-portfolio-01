@@ -14,13 +14,11 @@
 @keyframes contentSlideInFromBottom {
   0% {
     opacity: 0%;
-    transform: translateY(5%);
-    width: 68vw;
+    transform: translateY(15%);
   }
   100% {
     transform: translateY(0);
     opacity: 100%;
-    width: 70vw;
   }
 }
 
@@ -43,17 +41,26 @@
   100% {
   }
 }
-
+//the entry items all have hardcoded H3 values, the before and after are used for the line hover highlights
 .entryItem {
+  display: flex;
+  flex-flow: column;
   h3 {
     font-family: monospace;
     font-size: 3rem;
+    margin: 0 10% 0 10%;
     margin-bottom: 3vh;
     margin-top: 3vh;
+    background-color: hsla(181, 100%, 11%, 0.3);
+    width: fit-content;
+    align-self: center;
+    padding: 5px;
+    border-radius: 25%;
+
+    padding: 10px 15px 10px 15px;
   }
 
   color: @AccentColor3;
-  max-height: 68vh;
   background-color: hsla(181, 71%, 23%, 0.4);
   width: 70vw;
   min-height: 20vh;
@@ -66,39 +73,29 @@
   overflow: hidden;
   position: relative;
   transition: background-color 0.75s;
-  &::before {
-    background-color: @AccentColor3;
-    content: ".";
-    color: transparent;
-
-    transition: width 2s;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    height: 1%;
-    overflow-y: hidden;
-  }
+  &::before,
   &::after {
     background-color: @AccentColor3;
     content: ".";
     color: transparent;
-
-    transition: width 1s;
     position: absolute;
-    bottom: 10px;
     left: 0;
     right: 0;
     margin: auto;
     width: 0%;
-    height: 1%;
+    height: 0.5vh;
     overflow-y: hidden;
+  }
+  &::before {
+    transition: width 2s;
+    top: 10px;
+  }
+  &::after {
+    transition: width 1s;
+    bottom: 10px;
   }
   &:hover {
     background-color: hsla(181, 71%, 23%, 0.85);
-
     &::before {
       width: 45%;
     }
@@ -108,24 +105,33 @@
     }
   }
 
-  p {
+  .descriptionContainer {
     background-color: hsla(181, 100%, 11%, 0.7);
-    min-height: 200px;
     padding: 1.5%;
     margin: 2%;
+
     border-radius: 8.5%;
     line-height: 2.5rem;
     border: #2c3531 solid 2px;
     animation: 3s ease-in paragraphSize;
     overflow: hidden;
     overflow-y: auto;
-    max-height: 35%;
+    max-height: 0;
     position: relative;
+    align-items: center;
+    max-height: 50%;
+  }
+
+  p {
+    margin-top: 0;
   }
 }
 
 .entryImg {
   width: 60%;
+  max-height: 30vh;
+  object-fit: cover;
+  object-position: TOP;
 }
 
 .doubleContainer {
@@ -135,6 +141,14 @@
 .singleContainer {
   margin-bottom: 1%;
   max-width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  place-self: flex-end;
+
+  .descriptionContainer {
+    max-height: 30vh;
+  }
 }
 
 /* width */
