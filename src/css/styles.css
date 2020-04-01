@@ -48,9 +48,7 @@ code {
   border-bottom: #d1e8e2 solid 2px;
   position: fixed;
   z-index: 10;
-  /* Set the navbar to fixed position */
   width: 100%;
-  /* Full width */
   padding-bottom: 10px;
 }
 .App-header div {
@@ -130,7 +128,8 @@ a:hover::after {
   min-height: 20vh;
   border: #ffcb95 solid 2px;
   margin-bottom: 8vh;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   animation: 1s ease-in contentSlideInFromBottom;
   overflow: hidden;
   position: relative;
@@ -139,6 +138,8 @@ a:hover::after {
 .entryItem h3 {
   font-family: monospace;
   font-size: 3rem;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
 }
 .entryItem::before {
   background-color: #d1e8e2;
@@ -146,7 +147,7 @@ a:hover::after {
   color: transparent;
   transition: width 2s;
   position: absolute;
-  top: 7.5px;
+  top: 10px;
   left: 0;
   right: 0;
   margin: auto;
@@ -160,7 +161,7 @@ a:hover::after {
   color: transparent;
   transition: width 1s;
   position: absolute;
-  bottom: 7.5px;
+  bottom: 10px;
   left: 0;
   right: 0;
   margin: auto;
@@ -181,8 +182,7 @@ a:hover::after {
   background-color: hsla(181, 100%, 11%, 0.7);
   min-height: 200px;
   padding: 1.5%;
-  margin: 5%;
-  margin-bottom: 2%;
+  margin: 2%;
   border-radius: 8.5%;
   line-height: 2.5rem;
   border: #2c3531 solid 2px;
@@ -190,6 +190,8 @@ a:hover::after {
   overflow: hidden;
   overflow-y: auto;
   max-height: 35%;
+  bottom: -8%;
+  position: relative;
 }
 .entryImg {
   width: 60%;
@@ -204,6 +206,7 @@ a:hover::after {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 80%;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -211,11 +214,12 @@ a:hover::after {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #116466;
+  height: 10px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #2c3531;
 }
 /* SCROLLBAR CODE END */
 footer {

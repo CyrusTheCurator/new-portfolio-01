@@ -13,20 +13,7 @@ function Work(props) {
       <div className="pageTitle">Work</div>
       <div className="contentContainer">
         <div className="entryItem">
-          ITEM 1{" "}
-          <p>
-            Cheese and wine st. agur blue cheese dolcelatte. Cut the cheese cut
-            the cheese cheddar macaroni cheese cheese and biscuits bavarian
-            bergkase cheese and biscuits edam. Rubber cheese macaroni cheese say
-            cheese everyone loves fromage frais macaroni cheese cheese triangles
-            roquefort. Boursin hard cheese cow babybel camembert de normandie
-            danish fontina airedale cheese and biscuits. Cheesecake who moved my
-            cheese parmesan cheesy feet gouda boursin cheese and wine cheesy
-            grin. Gouda squirty cheese hard cheese.
-          </p>
-        </div>
-        <div className="entryItem">
-          ITEM 2{" "}
+          <h3>I like making thing</h3>
           <p>
             Cow pepper jack danish fontina. Swiss cheesecake edam emmental
             cheese on toast bocconcini everyone loves lancashire. Hard cheese
@@ -43,7 +30,7 @@ function Work(props) {
         </div>
 
         <div className="entryItem">
-          ITEM 3{" "}
+          <h3>SITES 4 TH WRLD</h3>
           <p>
             Brie the big cheese roquefort. Chalk and cheese who moved my cheese
             babybel roquefort melted cheese cheese and wine stinking bishop
@@ -56,37 +43,6 @@ function Work(props) {
             cheese cheesy grin brie lancashire. Stilton say cheese when the
             cheese comes out everybody's happy cauliflower cheese swiss blue
             castello red leicester taleggio. Brie mascarpone.
-          </p>
-        </div>
-
-        <div className="entryItem">
-          ITEM 4{" "}
-          <p>
-            Cut the cheese gouda squirty cheese. Everyone loves fondue
-            port-salut the big cheese dolcelatte stilton red leicester fromage
-            frais. Port-salut blue castello roquefort pecorino mozzarella danish
-            fontina melted cheese ricotta. Mascarpone st. agur blue cheese goat
-            cheddar everyone loves cheese and biscuits the big cheese cheese on
-            toast. Gouda taleggio cheesy feet manchego squirty cheese queso
-            rubber cheese taleggio. St. agur blue cheese stinking bishop cream
-            cheese stilton cheese triangles rubber cheese taleggio monterey
-            jack. Jarlsberg fromage the big cheese.
-          </p>
-        </div>
-
-        <div className="entryItem">
-          ITEM 5{" "}
-          <p>
-            Paneer goat cheeseburger. Red leicester emmental mozzarella when the
-            cheese comes out everybody's happy say cheese caerphilly taleggio
-            ricotta. Emmental red leicester fromage hard cheese feta danish
-            fontina jarlsberg cream cheese. Cheesy grin cut the cheese everyone
-            loves blue castello cheesy feet rubber cheese squirty cheese cream
-            cheese. Stinking bishop the big cheese who moved my cheese cheese
-            triangles mascarpone red leicester paneer cheese strings. Brie
-            airedale smelly cheese bocconcini cow st. agur blue cheese roquefort
-            roquefort. Manchego bavarian bergkase mozzarella cow cheesecake
-            cheese triangles stilton.
           </p>
         </div>
       </div>{" "}

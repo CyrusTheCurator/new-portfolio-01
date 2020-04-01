@@ -48,6 +48,8 @@
   h3 {
     font-family: monospace;
     font-size: 3rem;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
   }
 
   color: @AccentColor3;
@@ -57,7 +59,8 @@
   min-height: 20vh;
   border: @AccentColor2 solid 2px;
   margin-bottom: 8vh;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   animation: 1s ease-in contentSlideInFromBottom;
   position: relative;
   overflow: hidden;
@@ -70,7 +73,7 @@
 
     transition: width 2s;
     position: absolute;
-    top: 7.5px;
+    top: 10px;
     left: 0;
     right: 0;
     margin: auto;
@@ -85,14 +88,13 @@
 
     transition: width 1s;
     position: absolute;
-    bottom: 7.5px;
+    bottom: 10px;
     left: 0;
     right: 0;
     margin: auto;
     width: 0%;
     height: 1%;
     overflow-y: hidden;
-    // transform: translate(-50%, -50%);
   }
   &:hover {
     background-color: hsla(181, 71%, 23%, 0.85);
@@ -110,15 +112,16 @@
     background-color: hsla(181, 100%, 11%, 0.7);
     min-height: 200px;
     padding: 1.5%;
-    margin: 5%;
-    margin-bottom: 2%;
+    margin: 2%;
     border-radius: 8.5%;
     line-height: 2.5rem;
-    border: @BGcolor solid 2px;
+    border: #2c3531 solid 2px;
     animation: 3s ease-in paragraphSize;
     overflow: hidden;
     overflow-y: auto;
     max-height: 35%;
+    bottom: -8%;
+    position: relative;
   }
 }
 
@@ -138,6 +141,7 @@
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 80%;
 }
 
 /* Track */
@@ -147,11 +151,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: @SecondaryColor;
+  height: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: @BGcolor;
 }
 /* SCROLLBAR CODE END */

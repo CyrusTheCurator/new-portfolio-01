@@ -1,6 +1,7 @@
 import React from "react";
 import joshImg from "../images/JoshIntro.png";
 import rocksImg from "../images/rocks.png";
+
 import {
   Route,
   Link,
@@ -22,20 +23,19 @@ function Home(props) {
                 Hi, my name is Josh Luscombe, and I'm a full-stack web developer
                 currently based in Fresno, California. I host my portfolio here
                 where I will provide frequent updates on my latest projects and
-                career status!
+                career status! (You can check out my portfolio details{" "}
+                <Link to="/work">here</Link>)
               </p>
             </div>
             <div className="singleContainer">
               <img className="entryImg" src={rocksImg} alt="Image Of Rocks" />
               <p>
-                My background in computer science originated in high school. I
-                took several extracurricular courses in HTML/CSS, Java, and game
-                development. I had a great time, but extrinsic circumstances led
-                to me pursuing a nursing degree instead of following my dreams
-                to be a software/web developer. All these years later, and now I
-                can't seem to want to do anything else other than code! I am
-                very grateful to Lambda that I can attend their course and gain
-                marketable skills.
+                My background with computer science originated in high school. I
+                took several courses in HTML/CSS, Java, and game development.
+                After 6 years of studying and working in healthcare, I can't
+                seem to want to do anything else other than code! I am very
+                grateful to Lambda that I can attend their course and gain
+                valuable skills.
               </p>
             </div>
           </div>
