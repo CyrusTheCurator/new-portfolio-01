@@ -25,9 +25,10 @@
   align-items: center;
   padding-top: 10vh;
   position: relative;
-  background-image: linear-gradient(to bottom, hsla(220, 13%, 18%, 0.5), hsl(28, 50%, 70%)), url("../images/morro.png");
+  background-image: linear-gradient(to bottom, hsla(220, 13%, 18%, 0.3), hsla(28, 50%, 70%, 0.5)), url("../images/morro.png");
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-style: 20px solid white;
 }
 body {
@@ -95,16 +96,19 @@ a:hover::after {
   }
   100% {
     transform: translateY(0);
+    opacity: 100%;
   }
 }
 @keyframes contentSlideInFromBottom {
   0% {
     opacity: 0%;
     transform: translateY(5%);
+    width: 68vw;
   }
   100% {
     transform: translateY(0);
     opacity: 100%;
+    width: 70vw;
   }
 }
 .pageTitle {
@@ -120,39 +124,103 @@ a:hover::after {
 }
 .entryItem {
   color: #d1e8e2;
-  background-color: hsla(181, 71%, 23%, 0.85);
+  max-height: 68vh;
+  background-color: hsla(181, 71%, 23%, 0.4);
   width: 70vw;
   min-height: 20vh;
   border: #ffcb95 solid 2px;
   margin-bottom: 8vh;
   font-size: 1.2rem;
-  animation: 0.6s ease-in contentSlideInFromBottom;
+  animation: 1s ease-in contentSlideInFromBottom;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.75s;
+}
+.entryItem h3 {
+  font-family: monospace;
+  font-size: 3rem;
 }
 .entryItem::before {
-  width: 100px;
-  height: 100px;
-  color: yellow;
-  background-color: red;
-  content: "TESTING";
+  background-color: #d1e8e2;
+  content: ".";
+  color: transparent;
+  transition: width 2s;
+  position: absolute;
+  top: 7.5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  height: 1%;
+  overflow-y: hidden;
+}
+.entryItem::after {
+  background-color: #d1e8e2;
+  content: ".";
+  color: transparent;
+  transition: width 1s;
+  position: absolute;
+  bottom: 7.5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  height: 1%;
+  overflow-y: hidden;
+}
+.entryItem:hover {
+  background-color: hsla(181, 71%, 23%, 0.85);
 }
 .entryItem:hover::before {
-  transition: content 2s;
-  content: "";
-  background-color: red;
-  width: 50px;
-  height: 50px;
+  width: 45%;
+}
+.entryItem:hover::after {
+  width: 85%;
 }
 .entryItem p {
-  background-color: hsla(181, 100%, 11%, 0.5);
+  background-color: hsla(181, 100%, 11%, 0.7);
+  min-height: 200px;
   padding: 1.5%;
   margin: 5%;
   margin-bottom: 2%;
   border-radius: 8.5%;
   line-height: 2.5rem;
   border: #2c3531 solid 2px;
+  animation: 3s ease-in paragraphSize;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 35%;
 }
 .entryImg {
   width: 60%;
+}
+.doubleContainer {
+  display: flex;
+}
+.singleContainer {
+  margin-bottom: 1%;
+  max-width: 50%;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* SCROLLBAR CODE END */
+footer {
+  background-color: black;
+  height: 20vh;
 }
 body {
   background-color: #2c3531;
