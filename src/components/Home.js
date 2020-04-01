@@ -1,5 +1,6 @@
 import React from "react";
 import joshImg from "../images/JoshIntro.png";
+import rocksImg from "../images/rocks.png";
 import {
   Route,
   Link,
@@ -14,16 +15,33 @@ function Home(props) {
       <div className="contentContainer">
         <div className="entryItem">
           <h3>Welcome</h3>{" "}
-          <img className="entryImg" src={joshImg} alt="Image Of Josh" />
-          <p>
-            Hi, my name is Josh Luscombe, and I'm a full-stack web developer
-            currently based in Fresno, California. I host my portfolio here
-            where I will provide frequent updates on my latest projects and
-            career status!
-          </p>
+          <div className="doubleContainer">
+            <div className="singleContainer">
+              <img className="entryImg" src={joshImg} alt="Image Of Josh" />
+              <p>
+                Hi, my name is Josh Luscombe, and I'm a full-stack web developer
+                currently based in Fresno, California. I host my portfolio here
+                where I will provide frequent updates on my latest projects and
+                career status!
+              </p>
+            </div>
+            <div className="singleContainer">
+              <img className="entryImg" src={rocksImg} alt="Image Of Rocks" />
+              <p>
+                My background in computer science originated in high school. I
+                took several extracurricular courses in HTML/CSS, Java, and game
+                development. I had a great time, but extrinsic circumstances led
+                to me pursuing a nursing degree instead of following my dreams
+                to be a software/web developer. All these years later, and now I
+                can't seem to want to do anything else other than code! I am
+                very grateful to Lambda that I can attend their course and gain
+                marketable skills.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="entryItem">
-          ITEM 2{" "}
+          <h3>I like making thing</h3>
           <p>
             Cow pepper jack danish fontina. Swiss cheesecake edam emmental
             cheese on toast bocconcini everyone loves lancashire. Hard cheese
@@ -40,7 +58,7 @@ function Home(props) {
         </div>
 
         <div className="entryItem">
-          ITEM 3{" "}
+          <h3>SITES 4 TH WRLD</h3>
           <p>
             Brie the big cheese roquefort. Chalk and cheese who moved my cheese
             babybel roquefort melted cheese cheese and wine stinking bishop
@@ -57,7 +75,8 @@ function Home(props) {
         </div>
 
         <div className="entryItem">
-          ITEM 4{" "}
+          <h3>Code for a greater good</h3>
+
           <p>
             Cut the cheese gouda squirty cheese. Everyone loves fondue
             port-salut the big cheese dolcelatte stilton red leicester fromage
@@ -72,7 +91,8 @@ function Home(props) {
         </div>
 
         <div className="entryItem">
-          ITEM 5{" "}
+          <h3>Who writes this much about cheese?</h3>
+
           <p>
             Paneer goat cheeseburger. Red leicester emmental mozzarella when the
             cheese comes out everybody's happy say cheese caerphilly taleggio

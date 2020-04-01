@@ -15,6 +15,8 @@ function App() {
 
         <MainContentContainer />
       </div>
+
+      <footer>our footer goes here</footer>
     </Router>
   );
 }
