@@ -190,7 +190,6 @@ a:hover::after {
   overflow: hidden;
   overflow-y: auto;
   max-height: 35%;
-  bottom: -8%;
   position: relative;
 }
 .entryImg {
