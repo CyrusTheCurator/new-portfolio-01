@@ -11,8 +11,7 @@ function App() {
         <header className="App-header">
           <Navbar />
         </header>
-        {/* <img className="BgImg" src={morroImg} alt="Morro Bay" /> */}
-
+        <div className="BgImg" />
         <MainContentContainer />
       </div>
 
