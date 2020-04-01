@@ -188,9 +188,8 @@ a:hover::after {
   border: #2c3531 solid 2px;
   animation: 3s ease-in paragraphSize;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 35%;
-  scrollbar-shadow-color: black;
 }
 .entryImg {
   width: 60%;
@@ -202,6 +201,23 @@ a:hover::after {
   margin-bottom: 1%;
   max-width: 50%;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* SCROLLBAR CODE END */
 footer {
   background-color: black;
   height: 20vh;
