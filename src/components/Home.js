@@ -1,6 +1,7 @@
 import React from "react";
 import joshImg from "../images/JoshIntro.png";
 import rocksImg from "../images/rocks.png";
+import EntryCard from "../components/EntryCard";
 
 import {
   Route,
