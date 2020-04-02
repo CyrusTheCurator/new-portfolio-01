@@ -39,6 +39,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.nameTitle {
+  position: fixed;
+  left: 20px;
+  bottom: 25px;
+  opacity: 75%;
+  border-bottom: solid black 2px;
+  z-index: -1;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -126,6 +134,9 @@ a:hover::after {
   font-weight: 700;
   animation: ease-in 0.5s 1 slideInFromBottom;
 }
+.contentContainer:hover ~ .pageTitle {
+  color: black;
+}
 .entryItem {
   display: flex;
   flex-flow: column;
@@ -145,9 +156,7 @@ a:hover::after {
 .entryItem h3 {
   font-family: monospace;
   font-size: 3rem;
-  margin: 0 10% 0 10%;
-  margin-bottom: 3vh;
-  margin-top: 3vh;
+  margin: 3vh 20%;
   background-color: hsla(181, 100%, 11%, 0.3);
   width: fit-content;
   align-self: center;
@@ -203,11 +212,21 @@ a:hover::after {
 .entryItem p {
   margin-top: 0;
 }
+.imgMain .entryImg {
+  max-height: 10vh;
+  opacity: 30%;
+  transition-property: opacity, max-height;
+  transition-duration: 1s, 1s;
+}
 .entryImg {
   width: 60%;
   max-height: 30vh;
   object-fit: cover;
   object-position: TOP;
+}
+.entryImg:hover {
+  max-height: 40vh;
+  opacity: 100%;
 }
 .doubleContainer {
   display: flex;
@@ -219,6 +238,7 @@ a:hover::after {
   flex-flow: column;
   align-items: center;
   place-self: flex-end;
+  height: 50vh;
 }
 .singleContainer .descriptionContainer {
   max-height: 30vh;

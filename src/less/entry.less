@@ -41,6 +41,11 @@
   100% {
   }
 }
+
+.contentContainer:hover ~ .pageTitle {
+  color: black;
+}
+
 //the entry items all have hardcoded H3 values, the before and after are used for the line hover highlights
 .entryItem {
   display: flex;
@@ -48,9 +53,7 @@
   h3 {
     font-family: monospace;
     font-size: 3rem;
-    margin: 0 10% 0 10%;
-    margin-bottom: 3vh;
-    margin-top: 3vh;
+    margin: 3vh 20%;
     background-color: hsla(181, 100%, 11%, 0.3);
     width: fit-content;
     align-self: center;
@@ -127,11 +130,24 @@
   }
 }
 
+//end of embedded LESS
+.imgMain {
+  .entryImg {
+    max-height: 10vh;
+    opacity: 30%;
+    transition-property: opacity, max-height;
+    transition-duration: 1s, 1s;
+  }
+}
 .entryImg {
   width: 60%;
   max-height: 30vh;
   object-fit: cover;
   object-position: TOP;
+  &:hover {
+    max-height: 40vh;
+    opacity: 100%;
+  }
 }
 
 .doubleContainer {
@@ -145,6 +161,7 @@
   flex-flow: column;
   align-items: center;
   place-self: flex-end;
+  height: 50vh;
 
   .descriptionContainer {
     max-height: 30vh;

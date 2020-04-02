@@ -12,6 +12,7 @@ function App() {
           <Navbar />
         </header>
         <div className="BgImg" />
+
         <MainContentContainer />
       </div>
 
