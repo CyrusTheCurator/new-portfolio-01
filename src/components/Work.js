@@ -4,6 +4,9 @@ import React from "react";
 import sweetEats from "../images/sweet-eats.png";
 import userInterface from "../images/ui-1.png";
 import studybookImg from "../images/marketing-page.png";
+import sleepTracker from "../images/sleeptracker.png";
+import lessSite from "../images/lessSite.jpg";
+import spacewalkers from "../images/spacewalkers.png";
 
 import {
   Route,
@@ -19,10 +22,31 @@ function Work(props) {
       <div className="pageTitle">Work</div>
       <div className="contentContainer">
         <div className="entryItem">
+          <h3>Sleep Tracker</h3>
+
+          <span class="imgMain">
+            <a href="https://front-end-gspwy4s0w.now.sh/" target="_blank">
+              <img className="entryImg" src={sleepTracker} alt="" />
+            </a>
+          </span>
+          <div className="descriptionContainer">
+            <p>
+              sleep sleep sleep sleep sleep sleep sleep sleep sleep sleep sleep
+              sleep sleep sleep sleep sleep sleep sleep sleep sleep sleep sleep
+              sleep sleep sleep
+            </p>
+          </div>
+        </div>
+        <div className="entryItem">
           <h3>Studybook - A Clinical Trial Recruitment App</h3>
 
           <span class="imgMain">
-            <img className="entryImg" src={studybookImg} alt="" />
+            <a
+              href="https://bw-clinical-trials.github.io/Marketing-Page/"
+              target="_blank"
+            >
+              <img className="entryImg" src={studybookImg} alt="" />
+            </a>
           </span>
           <div className="descriptionContainer">
             <p>
@@ -39,7 +63,9 @@ function Work(props) {
           <h3>User-Interface 1: Innovation On Demand</h3>
 
           <span class="imgMain">
-            <img className="entryImg" src={userInterface} alt="" />
+            <a href="https://front-end-gspwy4s0w.now.sh/" target="_blank">
+              <img className="entryImg" src={userInterface} alt="" />
+            </a>
           </span>
           <div className="descriptionContainer">
             <p>
@@ -56,7 +82,9 @@ function Work(props) {
           <h3>User-Interface 2: Sweet Eats Bakery</h3>
 
           <span class="imgMain">
-            <img className="entryImg" src={sweetEats} alt="" />
+            <a>
+              <img className="entryImg" src={sweetEats} alt="" />
+            </a>
           </span>
           <div className="descriptionContainer">
             <p>
@@ -74,10 +102,12 @@ function Work(props) {
           </div>
         </div>
         <div className="entryItem">
-          <h3>User-Interface 2: Sweet Eats Bakery</h3>
+          <h3>Advanced CSS</h3>
 
           <span class="imgMain">
-            <img className="entryImg" src={sweetEats} alt="" />
+            <a href="https://front-end-gspwy4s0w.now.sh/" target="_blank">
+              <img className="entryImg" src={spacewalkers} alt="" />
+            </a>
           </span>
           <div className="descriptionContainer">
             <p>
@@ -91,17 +121,23 @@ function Work(props) {
           </div>
         </div>
         <div className="entryItem">
-          <h3>User-Interface 2: Sweet Eats Bakery</h3>
+          <h3>Intro to Preprocessors</h3>
 
           <span class="imgMain">
-            <img className="entryImg" src={sweetEats} alt="" />
+            <a
+              href="https://cyrusthecurator.github.io/Preprocessing-I/"
+              target="_blank"
+            >
+              <img className="entryImg" src={lessSite} alt="" />
+            </a>
           </span>
           <div className="descriptionContainer">
             <p>
-              While one of the earlier assignments, the Sweet Eats project was a
-              very fun introductory exercise in CSS styling. Successfully
-              drafting a website based off of a design document was very
-              rewarding!
+              After learning the essentials of HTML and CSS, we immediately
+              began learning about preprocessors such as Less and Sass which
+              empower developers to work faster, more effectively, and with more
+              organized code. I had a lot of fun working on this project, and
+              might return to it at a later time to make revisions.
             </p>
           </div>
         </div>

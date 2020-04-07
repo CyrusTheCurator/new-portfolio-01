@@ -43,7 +43,7 @@
   position: fixed;
   left: 20px;
   bottom: 25px;
-  opacity: 75%;
+  opacity: 0.75;
   border-bottom: solid black 2px;
   z-index: -1;
 }
@@ -264,7 +264,7 @@ a:hover::after {
   background: #2c3531;
 }
 /* SCROLLBAR CODE END */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .entryItem h3 {
     font-size: 1.3rem;
   }
