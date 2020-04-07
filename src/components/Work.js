@@ -31,9 +31,14 @@ function Work(props) {
           </span>
           <div className="descriptionContainer">
             <p>
-              sleep sleep sleep sleep sleep sleep sleep sleep sleep sleep sleep
-              sleep sleep sleep sleep sleep sleep sleep sleep sleep sleep sleep
-              sleep sleep sleep
+              This project allowed us to really flex our abilities; We
+              incorporated our skills in React, preprocessors like LESS,
+              team-based product development, HTTPS requests, and advanced state
+              management to create a fully functional web app. In this case, our
+              app tracks the sleep needs of a user based on recorded user data.
+              That data is then run through a machine-learning model developed
+              by our data-science team to produce the nightly recommended hours
+              of sleep for the user.
             </p>
           </div>
         </div>
@@ -111,13 +116,10 @@ function Work(props) {
           </span>
           <div className="descriptionContainer">
             <p>
-              This assignment was one of the first that incorporated hosting on
-              github. The instructions were to replicate the design file as
-              closely as possible, while utilizing the skills and best-practices
-              we had been studying.
+              This assignment focused primarily on demonstration of fundamental
+              CSS concepts in practice, though I still believe it has a place on
+              this portfolio for now.
             </p>
-
-            <p>Building websites is fun! It's love at first commit.</p>
           </div>
         </div>
         <div className="entryItem">
