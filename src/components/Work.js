@@ -68,7 +68,7 @@ function Work(props) {
           <h3>User-Interface 1: Innovation On Demand</h3>
 
           <span class="imgMain">
-            <a href="https://front-end-gspwy4s0w.now.sh/" target="_blank">
+            <a target="_blank">
               <img className="entryImg" src={userInterface} alt="" />
             </a>
           </span>
@@ -110,7 +110,10 @@ function Work(props) {
           <h3>Advanced CSS</h3>
 
           <span class="imgMain">
-            <a href="https://front-end-gspwy4s0w.now.sh/" target="_blank">
+            <a
+              href="https://cyrusthecurator.github.io/Sprint-Challenge--Advanced-CSS/#"
+              target="_blank"
+            >
               <img className="entryImg" src={spacewalkers} alt="" />
             </a>
           </span>
