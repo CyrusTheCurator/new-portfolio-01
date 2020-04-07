@@ -32,7 +32,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, hsla(220, 13%, 18%, 0.1), hsla(28, 50%, 70%, 0.5)), url("../images/morro.png");
+  background-image: linear-gradient(to bottom, hsla(220, 13%, 18%, 0.5), hsla(28, 50%, 70%, 0.7)), url("../images/morro.png");
   filter: blur(0.6px);
   -webkit-filter: blur(0.6px);
   background-attachment: fixed;
@@ -67,19 +67,14 @@ code {
   width: 100%;
   padding-bottom: 10px;
 }
-.App-header div {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-a {
+.App-header a {
   color: #116466;
   text-decoration: none;
   font-weight: 700;
   position: relative;
   transition: all 0.25s;
 }
-a::after {
+.App-header a::after {
   bottom: -2px;
   left: 0;
   content: "";
@@ -91,10 +86,15 @@ a::after {
   border-bottom: #ffcb95 2px solid;
   transition: width ease-in 0.2s;
 }
-a:hover {
+.App-header a:hover {
   color: aqua;
 }
-a:hover::after {
+.App-header a:hover::after {
+  width: 100%;
+}
+.App-header div {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
 }
 .activeNavlink {
@@ -199,7 +199,7 @@ a:hover::after {
 .entryItem .descriptionContainer {
   background-color: hsla(181, 100%, 11%, 0.7);
   padding: 1.5%;
-  margin: 2vh 2vw 4vh 2vw;
+  margin: 2vh 1vw 4vh 1vw;
   border-radius: 8.5%;
   line-height: 2.5rem;
   border: #2c3531 solid 2px;
@@ -214,17 +214,24 @@ a:hover::after {
 .entryItem p {
   margin-top: 0;
 }
+.imgMain a::after {
+  content: "";
+}
+.imgMain a:hover::after {
+  width: 0%;
+}
 .imgMain .entryImg {
   max-height: 10vh;
   opacity: 0.3;
   transition-property: opacity, max-height, width;
   transition-duration: 1s, 1s, 1s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
 }
 .entryImg {
   width: 60%;
   max-height: 30vh;
   object-fit: cover;
-  object-position: TOP;
+  object-position: topyy;
 }
 .entryImg:hover {
   max-height: 40vh;
@@ -264,22 +271,6 @@ a:hover::after {
   background: #2c3531;
 }
 /* SCROLLBAR CODE END */
-@media only screen and (max-width: 900px) {
-  .entryItem h3 {
-    font-size: 1.3rem;
-  }
-  .imgMain .entryImg {
-    max-height: 10vh;
-    opacity: 0.3;
-    transition-property: opacity, max-height, width;
-    transition-duration: 1s, 3s, 1s;
-  }
-  .imgMain .entryImg:hover {
-    width: 80%;
-    max-height: 30vh;
-    opacity: 1;
-  }
-}
 footer {
   background-color: black;
   height: 20vh;
