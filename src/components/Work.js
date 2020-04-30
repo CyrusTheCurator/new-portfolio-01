@@ -1,18 +1,18 @@
 import React from "react";
 
 //content images
-import sweetEats from "../images/sweet-eats.png";
+import authFriends from "../images/authFriends.png";
 import userInterface from "../images/ui-1.png";
 import studybookImg from "../images/marketing-page.png";
 import sleepTracker from "../images/sleeptracker.png";
-import lessSite from "../images/lessSite.jpg";
+import covidImg from "../images/covid19.png";
 import spacewalkers from "../images/spacewalkers.png";
 
 import {
   Route,
   Link,
   NavLink,
-  BrowserRouter as Router
+  BrowserRouter as Router,
 } from "react-router-dom";
 
 function Work(props) {
@@ -21,6 +21,28 @@ function Work(props) {
       <h3 className="nameTitle">Josh Luscombe - 2020</h3>
       <div className="pageTitle">Work</div>
       <div className="contentContainer">
+        <div className="entryItem">
+          <h3>Friends List</h3>
+
+          <span class="imgMain">
+            <a
+              href="https://cyrusthecurator.github.io/Preprocessing-I/"
+              target="_blank"
+            >
+              <img className="entryImg" src={authFriends} alt="" />
+            </a>
+          </span>
+          <div className="descriptionContainer">
+            <p>
+              This project allowed us to independently work with and implement a
+              full-stack deployment, with functioning back-end and front-end.
+              Designed using React, registered users can log in, and are issued
+              a verification token that is used to gain access to user-specific
+              data hosted on the back-end server. This is technically my first
+              "deployed" webapp, as bare-bones as it is for now.
+            </p>
+          </div>
+        </div>
         <div className="entryItem">
           <h3>Sleep Tracker</h3>
 
@@ -65,44 +87,19 @@ function Work(props) {
         </div>
 
         <div className="entryItem">
-          <h3>User-Interface 1: Innovation On Demand</h3>
+          <h3>COVID-19 Data Tracker</h3>
 
           <span class="imgMain">
-            <a target="_blank">
-              <img className="entryImg" src={userInterface} alt="" />
+            <a href="https://tender-payne-4705b5.netlify.app/">
+              <img className="entryImg" src={covidImg} alt="" />
             </a>
           </span>
           <div className="descriptionContainer">
             <p>
-              This assignment was one of the first that incorporated hosting on
-              github. The instructions were to replicate the design file as
-              closely as possible, while utilizing the skills and best-practices
-              we had been studying.
-            </p>
-
-            <p>Building websites is fun! It's love at first commit.</p>
-          </div>
-        </div>
-        <div className="entryItem">
-          <h3>User-Interface 2: Sweet Eats Bakery</h3>
-
-          <span class="imgMain">
-            <a>
-              <img className="entryImg" src={sweetEats} alt="" />
-            </a>
-          </span>
-          <div className="descriptionContainer">
-            <p>
-              While one of the earlier assignments, the Sweet Eats project was a
-              very fun introductory exercise in CSS styling. Successfully
-              drafting a website based off of a design document was very
-              rewarding!
-            </p>
-
-            <p>
-              Meticulously formatting page elements using the box model
-              presented a challenge, but it also helped me to better understand
-              block/inline-block flow.
+              This app performs a simple API call to a Covid-19 statistics API,
+              populates the data dynamically into the app, and is styled using
+              the Bulma css framework. I had a lot of fun styling this one and
+              learning to implement HTTPS requests.
             </p>
           </div>
         </div>
@@ -126,24 +123,22 @@ function Work(props) {
           </div>
         </div>
         <div className="entryItem">
-          <h3>Intro to Preprocessors</h3>
+          <h3>User-Interface 1: Innovation On Demand</h3>
 
           <span class="imgMain">
-            <a
-              href="https://cyrusthecurator.github.io/Preprocessing-I/"
-              target="_blank"
-            >
-              <img className="entryImg" src={lessSite} alt="" />
+            <a target="_blank">
+              <img className="entryImg" src={userInterface} alt="" />
             </a>
           </span>
           <div className="descriptionContainer">
             <p>
-              After learning the essentials of HTML and CSS, we immediately
-              began learning about preprocessors such as Less and Sass which
-              empower developers to work faster, more effectively, and with more
-              organized code. I had a lot of fun working on this project, and
-              might return to it at a later time to make revisions.
+              This assignment was one of the first that incorporated hosting on
+              github. The instructions were to replicate the design file as
+              closely as possible, while utilizing the skills and best-practices
+              we had been studying.
             </p>
+
+            <p>Building websites is fun! It's love at first commit.</p>
           </div>
         </div>
       </div>{" "}

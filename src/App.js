@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import MainContentContainer from "./components/MainContentContainer";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Redirect } from "react-router-dom";
 // import morroImg from "./images/z.jpg";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <MainContentContainer />
       </div>
 
-      <footer>our footer goes here</footer>
+      <Redirect to="/home" />
     </Router>
   );
 }
