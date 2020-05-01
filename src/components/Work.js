@@ -25,10 +25,7 @@ function Work(props) {
           <h3>Friends List</h3>
 
           <span class="imgMain">
-            <a
-              href="https://cyrusthecurator.github.io/Preprocessing-I/"
-              target="_blank"
-            >
+            <a href="https://auth-friends-nine.now.sh/login" target="_blank">
               <img className="entryImg" src={authFriends} alt="" />
             </a>
           </span>
