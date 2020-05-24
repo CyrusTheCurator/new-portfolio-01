@@ -2,6 +2,7 @@
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
+  min-height: 100vh;
 }
 .App-logo {
   height: 40vmin;
@@ -32,12 +33,15 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, hsla(220, 13%, 18%, 0.5), hsla(28, 50%, 70%, 0.7)), url("../images/morro.png");
+  background-image: linear-gradient(to bottom, hsla(220, 13%, 18%, 0.5), rgba(116, 86, 60, 0.8)), url("../images/morro.png");
   filter: blur(0.6px);
   -webkit-filter: blur(0.6px);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  z-index: -1;
 }
 .nameTitle {
   position: fixed;
@@ -92,15 +96,15 @@ code {
 .App-header a:hover::after {
   width: 100%;
 }
+.App-header .activeNavlink {
+  color: darkturquoise;
+}
+.App-header .activeNavlink::after {
+  width: 100%;
+}
 .App-header div {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-}
-.activeNavlink {
-  color: darkturquoise;
-}
-.activeNavlink::after {
   width: 100%;
 }
 @keyframes slideInFromBottom {

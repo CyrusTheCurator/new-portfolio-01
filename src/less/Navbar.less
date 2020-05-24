@@ -33,6 +33,13 @@
     }
   }
 
+  .activeNavlink {
+    color: darkturquoise;
+    &::after {
+      width: 100%;
+    }
+  }
+
   background-color: @HeaderColor;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -51,11 +58,4 @@
 
   padding-bottom: 10px;
   // min-height: 30px;
-}
-
-.activeNavlink {
-  color: darkturquoise;
-  &::after {
-    width: 100%;
-  }
 }
