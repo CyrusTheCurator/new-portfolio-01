@@ -27,7 +27,11 @@ function Home(props) {
                   developer currently based in Fresno, California. I host my
                   portfolio here where I will provide frequent updates on my
                   latest projects and career status! (You can check out my
-                  portfolio details <Link to="/work">here</Link>)
+                  portfolio details{" "}
+                  <Link className="workLink" to="/work">
+                    here
+                  </Link>
+                  )
                 </p>
               </div>
             </div>
