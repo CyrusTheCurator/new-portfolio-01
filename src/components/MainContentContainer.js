@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./Home";
-import Work from "./Work";
+import Work from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 import { Route, Switch, Redirect } from "react-router-dom";
@@ -14,7 +14,7 @@ function MainContentContainer(props) {
         }}
       ></Route>
       <Route
-        path="/work"
+        path="/projects"
         render={(props) => {
           return <Work props={props} />;
         }}

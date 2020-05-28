@@ -44,12 +44,24 @@
   z-index: -1;
 }
 .nameTitle {
-  position: fixed;
+  position: absolute;
   left: 20px;
-  bottom: 25px;
+  bottom: 10px;
   opacity: 0.75;
   border-bottom: solid black 2px;
   z-index: -1;
+}
+.App-header {
+  background-color: #282c34;
+  justify-content: center;
+  font-size: calc(15px + 3vmin);
+  color: #ffcb95;
+  border-bottom: 2px solid #d1e8e2;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding-bottom: 10px;
+  max-height: 6.5vh;
 }
 body {
   margin: 0;
@@ -236,11 +248,10 @@ code {
   max-height: 30vh;
   opacity: 0.3;
   transition-property: opacity, max-height, width;
-  transition-duration: 1s, 1s, 1s;
+  transition-duration: 0.25s, 0.25s, 0.25s;
   transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
 }
 .entryImg:hover {
-  max-height: 40vh;
   opacity: 1;
 }
 .singleContainer .entryImg {
