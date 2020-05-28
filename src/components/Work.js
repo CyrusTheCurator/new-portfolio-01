@@ -62,8 +62,7 @@ function Work(props) {
           </div>
         </div>
         <div className="entryItem">
-          <h3>Studybook - A Clinical Trial Recruitment App</h3>
-
+          <h3>Studybook</h3> <p>- A Clinical Trial Recruitment App</p>
           <span class="imgMain">
             <a
               href="https://bw-clinical-trials.github.io/Marketing-Page/"

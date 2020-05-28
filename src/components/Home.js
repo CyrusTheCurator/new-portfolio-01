@@ -35,6 +35,12 @@ function Home(props) {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="entryItem">
+          <h3>Welcome</h3>{" "}
+          <div className="doubleContainer">
             <div className="singleContainer">
               <img className="entryImg" src={rocksImg} alt="Image Of Rocks" />
               <div className="descriptionContainer">

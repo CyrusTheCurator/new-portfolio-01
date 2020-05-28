@@ -211,7 +211,7 @@ code {
   background-color: hsla(181, 100%, 11%, 0.7);
   padding: 1.5%;
   margin: 2vh 1vw 4vh 1vw;
-  border-radius: 8.5%;
+  border-radius: 10px;
   line-height: 2.5rem;
   border: #2c3531 solid 2px;
   animation: 3s ease-in paragraphSize;
@@ -232,33 +232,35 @@ code {
   width: 0%;
 }
 .imgMain .entryImg {
-  max-height: 10vh;
+  max-width: 60vw;
+  max-height: 30vh;
   opacity: 0.3;
   transition-property: opacity, max-height, width;
   transition-duration: 1s, 1s, 1s;
   transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
 }
-.entryImg {
-  width: 60%;
-  max-height: 30vh;
-  object-fit: cover;
-  object-position: topyy;
-}
 .entryImg:hover {
   max-height: 40vh;
   opacity: 1;
 }
+.singleContainer .entryImg {
+  max-width: 60vw;
+  max-height: 25vh;
+  object-fit: cover;
+}
 .doubleContainer {
   display: flex;
+  flex-flow: column;
 }
 .singleContainer {
   margin-bottom: 1%;
-  max-width: 50%;
+  /* max-width: 50%; */
   display: flex;
   flex-flow: column;
   align-items: center;
   place-self: flex-end;
   height: 50vh;
+  margin: auto;
 }
 .singleContainer .descriptionContainer {
   max-height: 30vh;
