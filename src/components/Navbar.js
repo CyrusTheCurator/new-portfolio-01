@@ -7,8 +7,8 @@ function Navbar(props) {
         <NavLink to="/home" activeClassName="activeNavlink">
           Home
         </NavLink>
-        <NavLink to="/work" activeClassName="activeNavlink">
-          Work
+        <NavLink to="/Projects" activeClassName="activeNavlink">
+          Projects
         </NavLink>
         <NavLink to="/about" activeClassName="activeNavlink">
           About
