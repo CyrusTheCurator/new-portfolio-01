@@ -39,7 +39,7 @@ function Home(props) {
         </div>
 
         <div className="entryItem">
-          <h3>Welcome</h3>{" "}
+          <h3>Intro</h3>{" "}
           <div className="doubleContainer">
             <div className="singleContainer">
               <img className="entryImg" src={rocksImg} alt="Image Of Rocks" />
