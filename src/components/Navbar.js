@@ -7,7 +7,7 @@ function Navbar(props) {
         <NavLink to="/home" activeClassName="activeNavlink">
           Home
         </NavLink>
-        <NavLink to="/Projects" activeClassName="activeNavlink">
+        <NavLink to="/projects" activeClassName="activeNavlink">
           Projects
         </NavLink>
         <NavLink to="/about" activeClassName="activeNavlink">
