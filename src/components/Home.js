@@ -28,7 +28,7 @@ function Home(props) {
                   portfolio here where I will provide frequent updates on my
                   latest projects and career status! (You can check out my
                   portfolio details{" "}
-                  <Link className="workLink" to="/work">
+                  <Link className="workLink" to="/projects">
                     here
                   </Link>
                   )
