@@ -54,11 +54,11 @@
     font-family: monospace;
     font-size: 3rem;
     margin: 3vh 20%;
-    background-color: hsla(181, 100%, 11%, 0.3);
+    background-color: hsla(181, 100%, 11%, 0.9);
     width: fit-content;
     align-self: center;
     padding: 5px;
-    border-radius: 25%;
+    border-radius: 10px;
     max-height: 25vh;
     overflow: hidden;
 
@@ -66,7 +66,7 @@
   }
 
   color: @AccentColor3;
-  background-color: hsla(181, 71%, 23%, 0.4);
+  background-color: hsla(@AccentColor3, 0.4);
   width: 70vw;
   min-height: 20vh;
   border: @AccentColor2 solid 2px;
@@ -100,7 +100,10 @@
     bottom: 10px;
   }
   &:hover {
-    background-color: hsla(181, 71%, 23%, 0.85);
+    background-color: hsla(@AccentColor3, 0.6);
+    .entryImg {
+      opacity: 1;
+    }
     &::before {
       width: 45%;
     }
@@ -150,13 +153,8 @@
     max-height: 30vh;
     opacity: 0.3;
     transition-property: opacity, max-height, width;
-    transition-duration: 0.25s, 0.25s, 0.25s;
+    transition-duration: 0.5s, 0.5s, 0.5s;
     transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
-  }
-}
-.entryImg {
-  &:hover {
-    opacity: 1;
   }
 }
 
