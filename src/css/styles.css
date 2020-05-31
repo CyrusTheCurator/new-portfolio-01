@@ -33,7 +33,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, hsla(220, 13%, 18%, 0.5), rgba(116, 86, 60, 0.8));
+  background-image: linear-gradient(to bottom, #2c3531, #116466);
   filter: blur(0.6px);
   -webkit-filter: blur(0.6px);
   background-attachment: fixed;
@@ -153,7 +153,7 @@ code {
   display: flex;
   flex-flow: column;
   color: #d1e8e2;
-  background-color: hsla(181, 71%, 23%, 0.4);
+  background-color: hsla(164.34782609, 33.33333333%, 86.47058824%, 0.4);
   width: 70vw;
   min-height: 20vh;
   border: #ffcb95 solid 2px;
@@ -169,11 +169,11 @@ code {
   font-family: monospace;
   font-size: 3rem;
   margin: 3vh 20%;
-  background-color: hsla(181, 100%, 11%, 0.3);
+  background-color: hsla(181, 100%, 11%, 0.9);
   width: fit-content;
   align-self: center;
   padding: 5px;
-  border-radius: 25%;
+  border-radius: 10px;
   max-height: 25vh;
   overflow: hidden;
   padding: 10px 15px 10px 15px;
@@ -200,7 +200,10 @@ code {
   bottom: 10px;
 }
 .entryItem:hover {
-  background-color: hsla(181, 71%, 23%, 0.85);
+  background-color: hsla(164.34782609, 33.33333333%, 86.47058824%, 0.6);
+}
+.entryItem:hover .entryImg {
+  opacity: 1;
 }
 .entryItem:hover::before {
   width: 45%;
@@ -237,11 +240,8 @@ code {
   max-height: 30vh;
   opacity: 0.3;
   transition-property: opacity, max-height, width;
-  transition-duration: 0.25s, 0.25s, 0.25s;
+  transition-duration: 0.5s, 0.5s, 0.5s;
   transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
-}
-.entryImg:hover {
-  opacity: 1;
 }
 .singleContainer .entryImg {
   max-width: 60vw;
