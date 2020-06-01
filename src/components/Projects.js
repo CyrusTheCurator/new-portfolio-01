@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 //content images
 import authFriends from "../images/authFriends.png";
@@ -7,15 +7,6 @@ import studybookImg from "../images/marketing-page.png";
 import sleepTracker from "../images/sleeptracker.png";
 import covidImg from "../images/covid19.png";
 import spacewalkers from "../images/spacewalkers.png";
-// import {
-//   Link,
-//   DirectLink,
-//   Element,
-//   Events,
-//   animateScroll as scroll,
-//   scrollSpy,
-//   scroller,
-// } from "react-scroll";
 
 import {
   Route,
@@ -24,12 +15,6 @@ import {
   BrowserRouter as Router,
 } from "react-router-dom";
 
-// useEffect(() => {
-//   Events.scrollEvent.register("begin", function () {
-//     console.log("begin", arguments);
-//   });
-// }, []);
-
 function Work(props) {
   return (
     <div className="pageContainer">
@@ -37,7 +22,8 @@ function Work(props) {
       <div className="pageTitle">Work</div>
       <div className="contentContainer">
         <div className="entryItem">
-          <h3>Friends List</h3> <p>U: Josh, PW: joshcodes</p>
+          <h3>Friends List</h3>
+
           <span class="imgMain">
             <a href="https://auth-friends-nine.now.sh/login" target="_blank">
               <img className="entryImg" src={authFriends} alt="" />
@@ -55,8 +41,8 @@ function Work(props) {
           </div>
         </div>
         <div className="entryItem">
-          <h3>Sleep Tracker</h3>{" "}
-          <p>- Optimize your sleep based on your needs -</p>
+          <h3>Sleep Tracker</h3>
+
           <span class="imgMain">
             <a href="https://front-end-gspwy4s0w.now.sh/" target="_blank">
               <img className="entryImg" src={sleepTracker} alt="" />
@@ -76,7 +62,7 @@ function Work(props) {
           </div>
         </div>
         <div className="entryItem">
-          <h3>Studybook</h3> <p>- A Clinical Trial Recruitment App -</p>
+          <h3>Studybook</h3> <p>- A Clinical Trial Recruitment App</p>
           <span class="imgMain">
             <a
               href="https://bw-clinical-trials.github.io/Marketing-Page/"
@@ -97,7 +83,8 @@ function Work(props) {
         </div>
 
         <div className="entryItem">
-          <h3>COVID-19 Data Tracker</h3> <p>- API Usage on front-end -</p>
+          <h3>COVID-19 Data Tracker</h3>
+
           <span class="imgMain">
             <a href="https://tender-payne-4705b5.netlify.app/">
               <img className="entryImg" src={covidImg} alt="" />
@@ -113,8 +100,8 @@ function Work(props) {
           </div>
         </div>
         <div className="entryItem">
-          <h3>Advanced CSS</h3>{" "}
-          <p>- Fundamental CSS principles in practice -</p>
+          <h3>Advanced CSS</h3>
+
           <span class="imgMain">
             <a
               href="https://cyrusthecurator.github.io/Sprint-Challenge--Advanced-CSS/#"
@@ -144,9 +131,10 @@ function Work(props) {
               This assignment was one of the first that incorporated hosting on
               github. The instructions were to replicate the design file as
               closely as possible, while utilizing the skills and best-practices
-              we had been studying. <br /> Building websites is fun! It's love
-              at first commit.
+              we had been studying.
             </p>
+
+            <p>Building websites is fun! It's love at first commit.</p>
           </div>
         </div>
       </div>{" "}
