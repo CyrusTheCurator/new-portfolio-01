@@ -5,7 +5,7 @@
   position: fixed;
 
   a {
-    color: @AccentColor3;
+    color: @SecondaryColor;
     text-decoration: none;
     font-weight: 700;
     position: relative;
@@ -20,12 +20,12 @@
       transform: translateX(0);
       display: flex;
       justify-content: center;
-      border-bottom: @AccentColor1 2px solid;
+      border-bottom: @AccentColor2 2px solid;
       transition: width ease-in 0.2s;
     }
 
     &:hover {
-      color: @AccentColor1;
+      color: aqua;
 
       &::after {
         width: 100%;
@@ -34,19 +34,17 @@
   }
 
   .activeNavlink {
-    color: aqua;
-
+    color: darkturquoise;
     &::after {
       width: 100%;
     }
   }
 
-  background-color: @HeaderColor;
+  background-color: #282c34;
   justify-content: center;
   font-size: calc(15px + 3vmin);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ffcb95;
-  border-bottom: 4px solid @AccentColor2;
+  border-bottom: 2px solid #d1e8e2;
   position: fixed;
   z-index: 10;
   width: 100%;

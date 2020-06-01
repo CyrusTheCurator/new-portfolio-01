@@ -33,7 +33,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, #101010 5%, #0f2fa4 80%);
+  background-image: linear-gradient(to bottom, #2c3531, #116466);
   filter: blur(0.6px);
   -webkit-filter: blur(0.6px);
   background-attachment: fixed;
@@ -68,12 +68,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .App-header {
-  background-color: #0f2fa4;
+  background-color: #282c34;
   justify-content: center;
   font-size: calc(15px + 3vmin);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ffcb95;
-  border-bottom: 4px solid #101010;
+  border-bottom: 2px solid #d1e8e2;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -81,7 +80,7 @@ code {
   padding-bottom: 10px;
 }
 .App-header a {
-  color: #ffffff;
+  color: #116466;
   text-decoration: none;
   font-weight: 700;
   position: relative;
@@ -96,17 +95,17 @@ code {
   transform: translateX(0);
   display: flex;
   justify-content: center;
-  border-bottom: #da7d2e 2px solid;
+  border-bottom: #ffcb95 2px solid;
   transition: width ease-in 0.2s;
 }
 .App-header a:hover {
-  color: #da7d2e;
+  color: aqua;
 }
 .App-header a:hover::after {
   width: 100%;
 }
 .App-header .activeNavlink {
-  color: aqua;
+  color: darkturquoise;
 }
 .App-header .activeNavlink::after {
   width: 100%;
@@ -138,10 +137,10 @@ code {
 }
 .pageTitle {
   font-size: 3rem;
-  border: #0f2fa4 5px solid;
+  border-bottom: darkturquoise 10px solid;
   margin-bottom: 2vh;
-  background-color: #101010;
-  color: #ffffff;
+  background-color: #282c34;
+  color: #d1e8e2;
   border-radius: 80%;
   padding: 2%;
   font-weight: 700;
@@ -153,13 +152,13 @@ code {
 .entryItem {
   display: flex;
   flex-flow: column;
-  color: #ffffff;
-  background-color: hsla(27.55813953, 69.91869919%, 51.76470588%, 0.2);
+  color: #d1e8e2;
+  background-color: hsla(164.34782609, 33.33333333%, 86.47058824%, 0.4);
   width: 70vw;
   min-height: 20vh;
-  border: #da7d2e solid 2px;
+  border: #ffcb95 solid 2px;
   margin-bottom: 8vh;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   animation: 1s ease-in contentSlideInFromBottom;
   overflow: hidden;
@@ -167,10 +166,10 @@ code {
   transition: background-color 0.75s;
 }
 .entryItem h3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
   font-size: 3rem;
   margin: 3vh 20%;
-  background-color: hsla(0, 0%, 6.2745098%, 0.5);
+  background-color: hsla(181, 100%, 11%, 0.9);
   width: fit-content;
   align-self: center;
   padding: 5px;
@@ -181,7 +180,7 @@ code {
 }
 .entryItem::before,
 .entryItem::after {
-  background-color: #ffffff;
+  background-color: #d1e8e2;
   content: ".";
   color: transparent;
   position: absolute;
@@ -201,7 +200,7 @@ code {
   bottom: 10px;
 }
 .entryItem:hover {
-  background-color: hsla(27.55813953, 69.91869919%, 51.76470588%, 0.45);
+  background-color: hsla(164.34782609, 33.33333333%, 86.47058824%, 0.6);
 }
 .entryItem:hover .entryImg {
   opacity: 1;
@@ -213,12 +212,12 @@ code {
   width: 85%;
 }
 .entryItem .descriptionContainer {
-  background-color: #da7d2e;
+  background-color: hsla(181, 100%, 11%, 0.7);
   padding: 1.5%;
   margin: 2vh 1vw 4vh 1vw;
   border-radius: 10px;
   line-height: 2.5rem;
-  border: #101010 solid 2px;
+  border: #2c3531 solid 2px;
   animation: 3s ease-in paragraphSize;
   overflow: hidden;
   overflow-y: auto;
@@ -226,13 +225,6 @@ code {
   position: relative;
   align-items: center;
   max-height: 25vh;
-}
-.entryItem .descriptionContainer p {
-  background-color: hsla(0, 0%, 6.2745098%, 0.35);
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin: auto;
-  font-size: 90%;
 }
 .entryItem p {
   margin-top: 0;
@@ -267,7 +259,7 @@ code {
   flex-flow: column;
   align-items: center;
   place-self: flex-end;
-  max-height: 56vh;
+  height: 50vh;
   margin: auto;
 }
 .singleContainer .descriptionContainer {
@@ -284,7 +276,7 @@ code {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0f2fa4;
+  background: #116466;
   height: 10px;
 }
 /* Handle on hover */
