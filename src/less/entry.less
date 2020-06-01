@@ -24,9 +24,9 @@
 
 .pageTitle {
   font-size: 3rem;
-  border-bottom: darkturquoise 10px solid;
+  border: @SecondaryColor 5px solid;
   margin-bottom: 2vh;
-  background-color: #282c34;
+  background-color: @AccentColor2;
   color: @AccentColor3;
   border-radius: 80%;
   padding: 2%;
@@ -51,10 +51,10 @@
   display: flex;
   flex-flow: column;
   h3 {
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
     margin: 3vh 20%;
-    background-color: hsla(181, 100%, 11%, 0.9);
+    background-color: hsla(@AccentColor2, 0.5);
     width: fit-content;
     align-self: center;
     padding: 5px;
@@ -66,12 +66,12 @@
   }
 
   color: @AccentColor3;
-  background-color: hsla(@AccentColor3, 0.4);
+  background-color: hsla(@AccentColor1, 0.2);
   width: 70vw;
   min-height: 20vh;
-  border: @AccentColor2 solid 2px;
+  border: @AccentColor1 solid 2px;
   margin-bottom: 8vh;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   animation: 1s ease-in contentSlideInFromBottom;
   position: relative;
@@ -100,7 +100,7 @@
     bottom: 10px;
   }
   &:hover {
-    background-color: hsla(@AccentColor3, 0.6);
+    background-color: hsla(@AccentColor1, 0.45);
     .entryImg {
       opacity: 1;
     }
@@ -114,13 +114,13 @@
   }
 
   .descriptionContainer {
-    background-color: hsla(181, 100%, 11%, 0.7);
+    background-color: @AccentColor1;
     padding: 1.5%;
     margin: 2vh 1vw 4vh 1vw;
 
     border-radius: 10px;
     line-height: 2.5rem;
-    border: #2c3531 solid 2px;
+    border: @AccentColor2 solid 2px;
     animation: 3s ease-in paragraphSize;
     overflow: hidden;
     overflow-y: auto;
@@ -128,6 +128,13 @@
     position: relative;
     align-items: center;
     max-height: 25vh;
+    p {
+      background-color: hsla(@AccentColor2, 0.35);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin: auto;
+      font-size: 90%;
+    }
   }
 
   p {
@@ -176,7 +183,7 @@
   flex-flow: column;
   align-items: center;
   place-self: flex-end;
-  height: 50vh;
+  max-height: 56vh;
   margin: auto;
 
   .descriptionContainer {
