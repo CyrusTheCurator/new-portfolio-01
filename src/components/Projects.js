@@ -18,13 +18,12 @@ import medCabinet from "../images/med_cabinet.png";
 //   scroller,
 // } from "react-scroll";
 
-
-import {
-  Route,
-  Link,
-  NavLink,
-  BrowserRouter as Router,
-} from "react-router-dom";
+// import {
+//   Route,
+//   Link,
+//   NavLink,
+//   BrowserRouter as Router,
+// } from "react-router-dom";
 
 function Work(props) {
   return (
@@ -51,7 +50,6 @@ function Work(props) {
         </div>
         <div className="entryItem">
           <h3>Friends List</h3> <p>U: Josh, PW: joshcodes</p>
-
           <span class="imgMain">
             <a href="https://auth-friends-nine.now.sh/login" target="_blank">
               <img className="entryImg" src={authFriends} alt="" />
