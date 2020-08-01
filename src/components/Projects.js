@@ -35,6 +35,7 @@ function Work(props) {
           <h3>Med Cabinet</h3> <p>A cannabis strain recommendation app</p>
           <span class="imgMain">
             <a
+              alt="link to portfolio entry"
               rel="noopener noreferrer"
               href="https://med-cabinet8.netlify.app/"
               target="_blank"
@@ -56,6 +57,7 @@ function Work(props) {
           <h3>Friends List</h3> <p>U: Josh, PW: joshcodes</p>
           <span class="imgMain">
             <a
+              alt="link to portfolio entry"
               rel="noopener noreferrer"
               href="https://auth-friends-nine.now.sh/login"
               target="_blank"
@@ -79,6 +81,7 @@ function Work(props) {
 
           <span class="imgMain">
             <a
+              alt="link to portfolio entry"
               rel="noopener noreferrer"
               href="https://front-end-gspwy4s0w.now.sh/"
               target="_blank"
@@ -103,6 +106,7 @@ function Work(props) {
           <h3>Studybook</h3> <p>- A Clinical Trial Recruitment App</p>
           <span class="imgMain">
             <a
+              alt="link to portfolio entry"
               rel="noopener noreferrer"
               href="https://bw-clinical-trials.github.io/Marketing-Page/"
               target="_blank"
@@ -126,6 +130,7 @@ function Work(props) {
 
           <span class="imgMain">
             <a
+              alt="link to portfolio entry"
               rel="noopener noreferrer"
               href="https://tender-payne-4705b5.netlify.app/"
             >
@@ -146,6 +151,7 @@ function Work(props) {
 
           <span class="imgMain">
             <a
+              alt="link to portfolio entry"
               rel="noopener noreferrer"
               href="https://cyrusthecurator.github.io/Sprint-Challenge--Advanced-CSS/#"
               target="_blank"
