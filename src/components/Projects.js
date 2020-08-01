@@ -41,7 +41,7 @@ function Work(props) {
               target="_blank"
             >
               <img
-                alt="image of portfolio entry"
+                alt="portfolio entry"
                 className="entryImg"
                 src={medCabinet}
               />
@@ -67,7 +67,7 @@ function Work(props) {
               target="_blank"
             >
               <img
-                alt="image of portfolio entry"
+                alt="portfolio entry"
                 className="entryImg"
                 src={authFriends}
               />
@@ -95,7 +95,7 @@ function Work(props) {
               target="_blank"
             >
               <img
-                alt="image of portfolio entry"
+                alt="portfolio entry"
                 className="entryImg"
                 src={sleepTracker}
               />
@@ -124,7 +124,7 @@ function Work(props) {
               target="_blank"
             >
               <img
-                alt="image of portfolio entry"
+                alt="portfolio entry"
                 className="entryImg"
                 src={studybookImg}
               />
@@ -150,11 +150,7 @@ function Work(props) {
               rel="noopener noreferrer"
               href="https://tender-payne-4705b5.netlify.app/"
             >
-              <img
-                alt="image of portfolio entry"
-                className="entryImg"
-                src={covidImg}
-              />
+              <img alt="portfolio entry" className="entryImg" src={covidImg} />
             </a>
           </span>
           <div className="descriptionContainer">
@@ -177,7 +173,7 @@ function Work(props) {
               target="_blank"
             >
               <img
-                alt="image of portfolio entry"
+                alt="portfolio entry"
                 className="entryImg"
                 src={spacewalkers}
               />
@@ -196,7 +192,7 @@ function Work(props) {
 
           <span class="imgMain">
             <img
-              alt="image of portfolio entry"
+              alt="portfolio entry"
               className="entryImg"
               src={userInterface}
             />
