@@ -40,7 +40,11 @@ function Work(props) {
               href="https://med-cabinet8.netlify.app/"
               target="_blank"
             >
-              <img className="entryImg" src={medCabinet} />
+              <img
+                alt="portfolio entry"
+                className="entryImg"
+                src={medCabinet}
+              />
             </a>
           </span>
           <div className="descriptionContainer">
@@ -62,7 +66,11 @@ function Work(props) {
               href="https://auth-friends-nine.now.sh/login"
               target="_blank"
             >
-              <img className="entryImg" src={authFriends} />
+              <img
+                alt="portfolio entry"
+                className="entryImg"
+                src={authFriends}
+              />
             </a>
           </span>
           <div className="descriptionContainer">
@@ -86,7 +94,11 @@ function Work(props) {
               href="https://front-end-gspwy4s0w.now.sh/"
               target="_blank"
             >
-              <img className="entryImg" src={sleepTracker} />
+              <img
+                alt="portfolio entry"
+                className="entryImg"
+                src={sleepTracker}
+              />
             </a>
           </span>
           <div className="descriptionContainer">
@@ -111,7 +123,11 @@ function Work(props) {
               href="https://bw-clinical-trials.github.io/Marketing-Page/"
               target="_blank"
             >
-              <img className="entryImg" src={studybookImg} />
+              <img
+                alt="portfolio entry"
+                className="entryImg"
+                src={studybookImg}
+              />
             </a>
           </span>
           <div className="descriptionContainer">
@@ -134,7 +150,7 @@ function Work(props) {
               rel="noopener noreferrer"
               href="https://tender-payne-4705b5.netlify.app/"
             >
-              <img className="entryImg" src={covidImg} />
+              <img alt="portfolio entry" className="entryImg" src={covidImg} />
             </a>
           </span>
           <div className="descriptionContainer">
@@ -156,7 +172,11 @@ function Work(props) {
               href="https://cyrusthecurator.github.io/Sprint-Challenge--Advanced-CSS/#"
               target="_blank"
             >
-              <img className="entryImg" src={spacewalkers} />
+              <img
+                alt="portfolio entry"
+                className="entryImg"
+                src={spacewalkers}
+              />
             </a>
           </span>
           <div className="descriptionContainer">
@@ -171,7 +191,11 @@ function Work(props) {
           <h3>User-Interface 1: Innovation On Demand</h3>
 
           <span class="imgMain">
-            <img className="entryImg" src={userInterface} />
+            <img
+              alt="portfolio entry"
+              className="entryImg"
+              src={userInterface}
+            />
           </span>
           <div className="descriptionContainer">
             <p>
