@@ -19,7 +19,7 @@ function Home(props) {
           <h3>Welcome</h3>{" "}
           <div className="doubleContainer">
             <div className="singleContainer">
-              <img className="entryImg" src={joshImg} alt="Image Of Josh" />
+              <img className="entryImg" src={joshImg} alt="Josh" />
               <div className="descriptionContainer">
                 <p>
                   Hi, my name is Josh Luscombe, and I'm a full-stack web
@@ -41,7 +41,7 @@ function Home(props) {
           <h3>Intro</h3>{" "}
           <div className="doubleContainer">
             <div className="singleContainer">
-              <img className="entryImg" src={rocksImg} alt="Image Of Rocks" />
+              <img className="entryImg" src={rocksImg} alt="Rocks" />
               <div className="descriptionContainer">
                 <p>
                   My background with computer science originated in high school.
