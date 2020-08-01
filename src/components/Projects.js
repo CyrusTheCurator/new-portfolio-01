@@ -64,7 +64,7 @@ function Work(props) {
               Designed using React, registered users can log in, and are issued
               a verification token that is used to gain access to user-specific
               data hosted on the back-end server. This is technically my first
-              "deployed" webapp, as bare-bones as it is for now.
+              full-stack-deployment, as bare-bones as it is for now.
             </p>
           </div>
         </div>
