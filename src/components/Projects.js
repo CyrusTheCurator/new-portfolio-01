@@ -34,7 +34,11 @@ function Work(props) {
         <div className="entryItem">
           <h3>Med Cabinet</h3> <p>A cannabis strain recommendation app</p>
           <span class="imgMain">
-            <a href="https://med-cabinet8.netlify.app/" target="_blank">
+            <a
+              rel="noopener noreferrer"
+              href="https://med-cabinet8.netlify.app/"
+              target="_blank"
+            >
               <img className="entryImg" src={medCabinet} alt="" />
             </a>
           </span>
@@ -51,7 +55,11 @@ function Work(props) {
         <div className="entryItem">
           <h3>Friends List</h3> <p>U: Josh, PW: joshcodes</p>
           <span class="imgMain">
-            <a href="https://auth-friends-nine.now.sh/login" target="_blank">
+            <a
+              rel="noopener noreferrer"
+              href="https://auth-friends-nine.now.sh/login"
+              target="_blank"
+            >
               <img className="entryImg" src={authFriends} alt="" />
             </a>
           </span>
@@ -70,7 +78,11 @@ function Work(props) {
           <h3>Sleep Tracker</h3>
 
           <span class="imgMain">
-            <a href="https://front-end-gspwy4s0w.now.sh/" target="_blank">
+            <a
+              rel="noopener noreferrer"
+              href="https://front-end-gspwy4s0w.now.sh/"
+              target="_blank"
+            >
               <img className="entryImg" src={sleepTracker} alt="" />
             </a>
           </span>
@@ -91,6 +103,7 @@ function Work(props) {
           <h3>Studybook</h3> <p>- A Clinical Trial Recruitment App</p>
           <span class="imgMain">
             <a
+              rel="noopener noreferrer"
               href="https://bw-clinical-trials.github.io/Marketing-Page/"
               target="_blank"
             >
@@ -112,7 +125,10 @@ function Work(props) {
           <h3>COVID-19 Data Tracker</h3>
 
           <span class="imgMain">
-            <a href="https://tender-payne-4705b5.netlify.app/">
+            <a
+              rel="noopener noreferrer"
+              href="https://tender-payne-4705b5.netlify.app/"
+            >
               <img className="entryImg" src={covidImg} alt="" />
             </a>
           </span>
@@ -130,6 +146,7 @@ function Work(props) {
 
           <span class="imgMain">
             <a
+              rel="noopener noreferrer"
               href="https://cyrusthecurator.github.io/Sprint-Challenge--Advanced-CSS/#"
               target="_blank"
             >
@@ -148,7 +165,7 @@ function Work(props) {
           <h3>User-Interface 1: Innovation On Demand</h3>
 
           <span class="imgMain">
-            <a target="_blank">
+            <a rel="noopener noreferrer" target="_blank">
               <img className="entryImg" src={userInterface} alt="" />
             </a>
           </span>
