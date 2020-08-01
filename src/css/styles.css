@@ -281,7 +281,7 @@ code {
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2c3531;
+  background: #da7d2e;
 }
 /* SCROLLBAR CODE END */
 footer {
@@ -289,6 +289,6 @@ footer {
   height: 20vh;
 }
 body {
-  background-color: #2c3531;
+  background-color: #101010;
   color: white;
 }

@@ -7,6 +7,17 @@ import studybookImg from "../images/marketing-page.png";
 import sleepTracker from "../images/sleeptracker.png";
 import covidImg from "../images/covid19.png";
 import spacewalkers from "../images/spacewalkers.png";
+import medCabinet from "../images/med_cabinet.png";
+// import {
+//   Link,
+//   DirectLink,
+//   Element,
+//   Events,
+//   animateScroll as scroll,
+//   scrollSpy,
+//   scroller,
+// } from "react-scroll";
+
 
 import {
   Route,
@@ -22,7 +33,24 @@ function Work(props) {
       <div className="pageTitle">Work</div>
       <div className="contentContainer">
         <div className="entryItem">
-          <h3>Friends List</h3>
+          <h3>Med Cabinet</h3> <p>A cannabis strain recommendation app</p>
+          <span class="imgMain">
+            <a href="https://med-cabinet8.netlify.app/" target="_blank">
+              <img className="entryImg" src={medCabinet} alt="" />
+            </a>
+          </span>
+          <div className="descriptionContainer">
+            <p>
+              Med Cabinet is a cannabis strain recommendation platform developed
+              jointly with other students at lambda school. My primary
+              responsibilities were to engineer the backend API and databases
+              (users/passwords, strains) for this project, including parsing
+              user input and passing it into the AI recommendation API.
+            </p>
+          </div>
+        </div>
+        <div className="entryItem">
+          <h3>Friends List</h3> <p>U: Josh, PW: joshcodes</p>
 
           <span class="imgMain">
             <a href="https://auth-friends-nine.now.sh/login" target="_blank">
