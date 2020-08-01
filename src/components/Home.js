@@ -4,10 +4,10 @@ import rocksImg from "../images/rocks.png";
 import EntryCard from "../components/EntryCard";
 
 import {
-  Route,
+  // Route,
   Link,
-  NavLink,
-  BrowserRouter as Router,
+  // NavLink,
+  // BrowserRouter as Router,
 } from "react-router-dom";
 
 function Home(props) {
