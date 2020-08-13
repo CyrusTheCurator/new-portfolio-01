@@ -1,6 +1,5 @@
 import React from "react";
 import joshImg from "../images/JoshIntro.png";
-import rocksImg from "../images/rocks.png";
 
 import {
   // Route,
@@ -23,33 +22,7 @@ function Home(props) {
               <div className="descriptionContainer">
                 <p>
                   Hi, my name is Josh Luscombe, and I'm a full-stack web
-                  developer currently based in Fresno, California. I host my
-                  portfolio here where I will provide frequent updates on my
-                  latest projects and career status! (You can check out my
-                  portfolio details{" "}
-                  <Link className="workLink" to="/projects">
-                    here
-                  </Link>
-                  )
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="entryItem">
-          <h3>Intro</h3>{" "}
-          <div className="doubleContainer">
-            <div className="singleContainer">
-              <img className="entryImg" src={rocksImg} alt="Rocks" />
-              <div className="descriptionContainer">
-                <p>
-                  My background with computer science originated in high school.
-                  I took several courses in HTML/CSS, Java, and game
-                  development. After 6 years of studying and working in
-                  healthcare, I can't seem to want to do anything else other
-                  than code! I am very grateful to Lambda that I can attend
-                  their course and gain valuable skills.
+                  developer currently based in Fresno, California.
                 </p>
               </div>
             </div>
