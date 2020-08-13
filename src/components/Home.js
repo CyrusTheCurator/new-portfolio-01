@@ -14,8 +14,9 @@ function Home(props) {
               <img className="entryImg" src={joshImg} alt="Josh" />
               <div className="descriptionContainer">
                 <p>
-                  Hi, my name is Josh Luscombe, and I'm a full-stack web
-                  developer currently based in Fresno, California.
+                  Hi, my name is Josh Luscombe, and I'm a Full-Stack Web
+                  developer currently based in Fresno, California. You can visit
+                  my Projects page for examples of my work.
                 </p>
               </div>
             </div>
