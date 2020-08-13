@@ -1,13 +1,6 @@
 import React from "react";
 import joshImg from "../images/JoshIntro.png";
 
-import {
-  // Route,
-  Link,
-  // NavLink,
-  // BrowserRouter as Router,
-} from "react-router-dom";
-
 function Home(props) {
   return (
     <div className="pageContainer">
