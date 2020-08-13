@@ -50,10 +50,19 @@ function Work(props) {
           <div className="descriptionContainer">
             <p>
               Med Cabinet is a cannabis strain recommendation platform developed
-              jointly with other students at lambda school. My primary
-              responsibilities were to engineer the backend API and databases
-              (users/passwords, strains) for this project, including parsing
-              user input and passing it into the AI recommendation API.
+              with other students at lambda school. My primary responsibilities
+              were to engineer the backend API and databases (users/passwords,
+              strains), including parsing user input and passing it into the
+              recommendation API. The Github respository for the backend can be
+              found here:{" "}
+              <a
+                alt="link to portfolio entry Github Repository"
+                rel="noopener noreferrer"
+                href="https://github.com/CyrusTheCurator/Medcab_Backend"
+                target="_blank"
+              >
+                Repository with API docs
+              </a>
             </p>
           </div>
         </div>

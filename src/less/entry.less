@@ -36,6 +36,7 @@
 
 @keyframes changeLetter {
   0% {
+    color: ;
   }
 
   100% {
@@ -50,6 +51,12 @@
 .entryItem {
   display: flex;
   flex-flow: column;
+  a {
+    color: aqua;
+    &:hover {
+      color: @AccentColor3;
+    }
+  }
   h3 {
     font-family: monospace;
     font-size: 3rem;
