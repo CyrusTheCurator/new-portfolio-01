@@ -10,7 +10,7 @@ import React from "react";
 function About(props) {
   return (
     <div className="pageContainer">
-      <h3 className="nameTitle">Josh Luscombe - 2020</h3>
+      <h3 className="nameTitle">Zoe Brandt - 2020</h3>
       <div className="pageTitle">About</div>
       <div className="contentContainer">
         <div className="entryItem">
