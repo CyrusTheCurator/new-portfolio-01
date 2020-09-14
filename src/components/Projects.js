@@ -8,6 +8,7 @@ import sleepTracker from "../images/sleeptracker.png";
 import covidImg from "../images/covid19.png";
 import spacewalkers from "../images/spacewalkers.png";
 import medCabinet from "../images/med_cabinet.png";
+import conway from "../images/conway.png";
 // import {
 //   Link,
 //   DirectLink,
@@ -31,6 +32,31 @@ function Work(props) {
       <h3 className="nameTitle">Zoe Brandt - 2020</h3>
       <div className="pageTitle">Work</div>
       <div className="contentContainer">
+        <div className="entryItem">
+          <h3>Conway's Game of Life</h3> <p>A React.js implementation</p>
+          <span class="imgMain">
+            <a
+              alt="link to portfolio entry"
+              rel="noopener noreferrer"
+              href="https://hopeful-fermi-9eb3c2.netlify.app/"
+              target="_blank"
+            >
+              <img alt="portfolio entry" className="entryImg" src={conway} />
+            </a>
+          </span>
+          <div className="descriptionContainer">
+            <p>
+              This project is easily one of the most fun I've ever worked on.
+              The Game of Life, also known simply as Life, is a cellular
+              automaton devised by the British mathematician John Horton Conway
+              in 1970. It is a zero-player game, meaning that its evolution is
+              determined by its initial state, requiring no further input. My
+              version here builds upon the basics by integrating an
+              import-system that populates the board with patterns from the game
+              of life lexicon.
+            </p>
+          </div>
+        </div>
         <div className="entryItem">
           <h3>Med Cabinet</h3> <p>A cannabis strain recommendation app</p>
           <span class="imgMain">
