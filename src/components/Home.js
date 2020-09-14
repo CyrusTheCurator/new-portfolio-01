@@ -11,7 +11,7 @@ function Home(props) {
           <h3>Welcome</h3>{" "}
           <div className="doubleContainer">
             <div className="singleContainer">
-              <img className="entryImg" src={zoeimg} alt="Josh" />
+              <img className="entryImg" src={zoeimg} alt="rocks" />
               <div className="descriptionContainer">
                 <p>
                   Hi, my name is Zoe Brandt, and I'm a Full-Stack Web developer
