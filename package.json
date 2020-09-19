@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "gh-pages": "^2.2.0",
+    "mdbreact": "^4.27.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -16,7 +17,6 @@
     "react-scroll": "^1.7.16",
     "react-transition-group": "^4.3.0",
     "sass": "^1.26.7"
-
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-social-icons": "^4.1.0"
   }
 }

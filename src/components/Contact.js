@@ -1,4 +1,5 @@
 import React from "react";
+import SocialComponents from "./SocialComponents";
 
 // import {
 //   Route,
@@ -14,8 +15,7 @@ function Contact(props) {
       <div className="pageTitle">Contact</div>
       <div className="contentContainer">
         <div className="entryItem">
-          <h3>About</h3>
-          <p>TODO: Update Contact page</p>
+          <SocialComponents />
         </div>
       </div>{" "}
     </div>
