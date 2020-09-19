@@ -16,7 +16,7 @@ function Home(props) {
                 <p>
                   Hi, my name is Zoe Brandt, and I'm a Full-Stack Web developer
                   currently based in Fresno, California. You can visit my
-                  Projects page for examples of my work.
+                  Projects page for examples of my most recent work.
                 </p>
               </div>
             </div>
