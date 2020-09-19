@@ -17,7 +17,7 @@ function Contact(props) {
         <div className="entryItem">
           <SocialComponents />
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 }

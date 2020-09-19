@@ -16,18 +16,16 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(255, 203, 149, 0.2) 20%, #116466 150%);
-  filter: blur(0.6px);
-  -webkit-filter: blur(0.6px);
+  background: linear-gradient(to bottom, rgba(119, 73, 23, 0.7) 10%, #116466 115%), url("../images/morrorock.jpg");
+  -webkit-filter: blur(2px);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
   z-index: -1;
 }
 .nameTitle {
-  position: fixed;
+  position: absolute;
   left: 20px;
   bottom: 5px;
   opacity: 0.75;
@@ -37,12 +35,15 @@
   width: 8vw;
   font-size: 0.6rem;
   opacity: 0.2;
+  max-height: 1rem;
+  width: auto;
 }
 .buttonsContainer {
   display: flex;
   margin: auto;
   width: 100%;
   justify-content: space-around;
+  margin-bottom: 5vh;
 }
 .buttonHolder {
   display: flex;
@@ -94,7 +95,7 @@ code {
   transform: translateX(0);
   display: flex;
   justify-content: center;
-  border-bottom: #ffcb95 2px solid;
+  border-bottom: #cf8119 2px solid;
   transition: width ease-in 0.2s;
 }
 .App-header a:hover {
@@ -151,11 +152,12 @@ code {
 .entryItem {
   display: flex;
   flex-flow: column;
+  min-width: 300px;
   color: #d1e8e2;
   background-color: hsla(164.34782609, 33.33333333%, 86.47058824%, 0.4);
   width: 70vw;
   min-height: 20vh;
-  border: #ffcb95 solid 2px;
+  border: #774917 solid 2px;
   margin-bottom: 8vh;
   font-size: 1.1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -163,6 +165,9 @@ code {
   overflow: hidden;
   position: relative;
   transition: background-color 0.75s;
+}
+.entryItem p {
+  color: #282c34;
 }
 .entryItem a {
   color: aqua;
@@ -172,7 +177,7 @@ code {
 }
 .entryItem h3 {
   font-family: monospace;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 3vh 20%;
   background-color: hsla(181, 100%, 11%, 0.9);
   width: fit-content;
@@ -221,7 +226,7 @@ code {
   padding: 1.5%;
   margin: 2vh 1vw 4vh 1vw;
   border-radius: 10px;
-  line-height: 2.5rem;
+  line-height: 1.75rem;
   border: #2c3531 solid 2px;
   animation: 3s ease-in paragraphSize;
   overflow: hidden;
@@ -230,6 +235,11 @@ code {
   position: relative;
   align-items: center;
   max-height: 25vh;
+}
+.entryItem .descriptionContainer p {
+  margin-block-end: 0px;
+  font-size: 0.85rem;
+  color: white;
 }
 .entryItem p {
   margin-top: 0;
@@ -243,7 +253,7 @@ code {
 .imgMain .entryImg {
   max-width: 60vw;
   max-height: 30vh;
-  opacity: 0.3;
+  opacity: 1;
   transition-property: opacity, max-height, width;
   transition-duration: 0.5s, 0.5s, 0.5s;
   transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
@@ -286,7 +296,7 @@ code {
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #d9b08c;
+  background: #cf8119;
 }
 /* SCROLLBAR CODE END */
 footer {
