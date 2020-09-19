@@ -1,5 +1,5 @@
 import React from "react";
-import zoeimg from "../images/rocks.png";
+import zoeimg from "../images/zoe_main.jpg";
 
 function Home(props) {
   return (

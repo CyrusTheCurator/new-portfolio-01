@@ -10,9 +10,7 @@ function Navbar(props) {
         <NavLink to="/projects" activeClassName="activeNavlink">
           Projects
         </NavLink>
-        <NavLink to="/about" activeClassName="activeNavlink">
-          About
-        </NavLink>{" "}
+
         <NavLink to="/contact" activeClassName="activeNavlink">
           Contact
         </NavLink>
