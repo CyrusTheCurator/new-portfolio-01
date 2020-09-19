@@ -1,11 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { SocialIcon } from "react-social-icons";
 
 const SocialComponents = () => {
-  const url = "https://github.com/caspg/react-sharingbuttons";
-  const shareText = "Check this site!";
-
   return (
     <div className="buttonsContainer">
       <div className="buttonHolder">
