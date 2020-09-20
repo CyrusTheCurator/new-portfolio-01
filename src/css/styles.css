@@ -38,7 +38,7 @@
   bottom: 0;
   z-index: -100;
   margin: 0;
-  background: linear-gradient(to bottom, rgba(119, 73, 23, 0.75) 10%, rgba(17, 100, 102, 0.75) 115%), url("../images/morrorock2.jpg");
+  background: linear-gradient(to bottom, rgba(35, 50, 66, 0.75) 5%, rgba(27, 67, 95, 0.75) 115%), url("../images/morrorock2.jpg");
   background-size: cover;
 }
 .nameTitle {
@@ -67,7 +67,7 @@
   align-items: center;
 }
 html {
-  background-color: #2c3531;
+  background-color: #161925;
 }
 body {
   margin: 0;
@@ -86,7 +86,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .App-header {
-  background-color: #282c34;
+  background-color: #161925;
   justify-content: center;
   font-size: calc(15px + 3vmin);
   color: #ffcb95;
@@ -98,7 +98,7 @@ code {
   padding-bottom: 10px;
 }
 .App-header a {
-  color: #116466;
+  color: #cbf7ed;
   text-decoration: none;
   font-weight: 700;
   position: relative;
@@ -117,13 +117,13 @@ code {
   transition: width ease-in 0.2s;
 }
 .App-header a:hover {
-  color: aqua;
+  color: #5fbcff;
 }
 .App-header a:hover::after {
   width: 100%;
 }
 .App-header .activeNavlink {
-  color: darkturquoise;
+  color: #5fbcff;
 }
 .App-header .activeNavlink::after {
   width: 100%;
@@ -155,10 +155,10 @@ code {
 }
 .pageTitle {
   font-size: 3rem;
-  border-bottom: darkturquoise 10px solid;
+  border-bottom: #5fbcff 10px solid;
   margin-bottom: 2vh;
   background-color: #282c34;
-  color: #d1e8e2;
+  color: white;
   border-radius: 80%;
   padding: 2%;
   font-weight: 700;
@@ -171,44 +171,46 @@ code {
   display: flex;
   flex-flow: column;
   min-width: 300px;
-  color: #d1e8e2;
-  background-color: hsla(164.34782609, 33.33333333%, 86.47058824%, 0.4);
+  color: white;
+  background-color: hsla(211.2, 33.78378378%, 70.98039216%, 0.2);
   width: 70vw;
   min-height: 20vh;
-  border: #774917 solid 2px;
+  border: #1b435f solid 2px;
   margin-bottom: 8vh;
   font-size: 1.1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   animation: 1s ease-in contentSlideInFromBottom;
   overflow: hidden;
   position: relative;
-  transition: background-color 0.75s;
+  transition: all 1s;
 }
 .entryItem p {
-  color: #282c34;
+  color: #23395b;
 }
 .entryItem a {
   color: aqua;
 }
 .entryItem a:hover {
-  color: #d1e8e2;
+  color: #9cb4ce;
 }
 .entryItem h3 {
   font-family: monospace;
   font-size: 2rem;
   margin: 3vh 20%;
-  background-color: hsla(181, 100%, 11%, 0.9);
+  background-color: hsla(216.42857143, 44.44444444%, 24.70588235%, 0.9);
+  transition: all 1s;
   width: fit-content;
   align-self: center;
   padding: 5px;
   border-radius: 10px;
   max-height: 25vh;
   overflow: hidden;
+  color: white;
   padding: 10px 15px 10px 15px;
 }
 .entryItem::before,
 .entryItem::after {
-  background-color: #d1e8e2;
+  background-color: #9cb4ce;
   content: ".";
   color: transparent;
   position: absolute;
@@ -224,11 +226,11 @@ code {
   top: 10px;
 }
 .entryItem::after {
-  transition: width 1s;
+  transition: width, ease-in-out 1s;
   bottom: 10px;
 }
 .entryItem:hover {
-  background-color: hsla(164.34782609, 33.33333333%, 86.47058824%, 0.6);
+  background-color: hsla(211.2, 33.78378378%, 70.98039216%, 0.5);
 }
 .entryItem:hover .entryImg {
   opacity: 1;
@@ -240,7 +242,7 @@ code {
   width: 85%;
 }
 .entryItem .descriptionContainer {
-  background-color: hsla(181, 100%, 11%, 0.7);
+  background-color: hsla(216.42857143, 44.44444444%, 24.70588235%, 0.7);
   padding: 1.5%;
   margin: 2vh 1vw 4vh 1vw;
   border-radius: 10px;
@@ -310,7 +312,7 @@ code {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #116466;
+  background: #233242;
   height: 10px;
 }
 /* Handle on hover */
