@@ -25,27 +25,21 @@
 }
 
 .BgImg {
-  // visibility: visible;
-  // position: absolute;
-  // width: 100vw;
+  position: fixed;
 
-  // width: 100vw;
-  // position: relative;
-  // height: 100%;
-  // background-attachment: fixed;
-  // background-size: 100vw;
-
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-
-  // -webkit-filter: blur(2px);
-  // background-attachment: fixed;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // transition: visibility 0s, opacity 0.5s linear;
-  // z-index: -1;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  bottom: 0;
+  z-index: -100;
+  margin: 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(@AccentColor2, 0.75) 10%,
+      rgba(@SecondaryColor, 0.75) 115%
+    ),
+    url("../images/morrorock2.jpg");
+  background-size: cover;
 }
 
 .BgGradient {
