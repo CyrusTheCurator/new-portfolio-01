@@ -37,7 +37,7 @@ function Home(props) {
                 a Nursing student, I realized that I wanted to leave a positive
                 impact on the world using scalable code-based solutions instead
                 of relying solely on hands-on skills. Since then I've gotten
-                back into development with more passion and drive than ever
+                back into development with more passion and enthusiasm than ever
                 before.
               </p>
             </div>
