@@ -36,7 +36,9 @@ function Home(props) {
                 impostor syndrome, I decided to study Nursing. During my time as
                 a Nursing student, I realized that I wanted to leave a positive
                 impact on the world using scalable code-based solutions instead
-                of relying solely on hands-on skills.
+                of relying solely on hands-on skills. Since then I've gotten
+                back into development with more passion and drive than ever
+                before.
               </p>
             </div>
             {/* <img className="entryImg" src={zoeimg} alt="rocks" /> */}
