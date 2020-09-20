@@ -259,7 +259,7 @@ code {
 .entryItem .descriptionContainer .about {
   font-size: 1.3rem;
   max-height: 30vh;
-  line-height: 1.8rem;
+  line-height: 2rem;
 }
 .entryItem .descriptionContainer p {
   margin-block-end: 0px;
