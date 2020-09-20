@@ -259,10 +259,11 @@ code {
 .entryItem .descriptionContainer .about {
   font-size: 1.3rem;
   max-height: 30vh;
+  line-height: 1.8rem;
 }
 .entryItem .descriptionContainer p {
   margin-block-end: 0px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: white;
 }
 .entryItem p {
