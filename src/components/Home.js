@@ -25,22 +25,21 @@ function Home(props) {
         </div>
         <div className="entryItem">
           <h3>About Me</h3>{" "}
-          <div className="doubleContainer">
-            <div className="singleContainer">
-              {/* <img className="entryImg" src={zoeimg} alt="rocks" /> */}
+          <div classNames="doubleContainer, bee">
+            {/* <img className="entryImg" src={zoeimg} alt="rocks" /> */}
 
-              <div className="descriptionContainer">
-                <p>
-                  My journey in web and software development started in 2011,
-                  when I took computer science courses in Java, Web development,
-                  and Android app development. After facing my own struggles
-                  with impostor syndrome, I decided to study Nursing. During my
-                  time as a Nursing student, I realized that I wanted to leave a
-                  positive impact on the world using scalable code-based
-                  solutions instead of relying solely on hands-on skills.
-                </p>
-              </div>
+            <div className="descriptionContainer">
+              <p className="about">
+                My journey in web and software development started in 2011, when
+                I took computer science courses in Java, Web development, and
+                Android app development. After facing my own struggles with
+                impostor syndrome, I decided to study Nursing. During my time as
+                a Nursing student, I realized that I wanted to leave a positive
+                impact on the world using scalable code-based solutions instead
+                of relying solely on hands-on skills.
+              </p>
             </div>
+            {/* <img className="entryImg" src={zoeimg} alt="rocks" /> */}
           </div>
         </div>
       </div>{" "}
