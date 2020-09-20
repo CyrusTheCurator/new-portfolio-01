@@ -5,7 +5,7 @@
   position: fixed;
 
   a {
-    color: @SecondaryColor;
+    color: @Links;
     text-decoration: none;
     font-weight: 700;
     position: relative;
@@ -25,7 +25,7 @@
     }
 
     &:hover {
-      color: aqua;
+      color: @HotLink;
 
       &::after {
         width: 100%;
@@ -34,13 +34,13 @@
   }
 
   .activeNavlink {
-    color: darkturquoise;
+    color: @HotLink;
     &::after {
       width: 100%;
     }
   }
 
-  background-color: #282c34;
+  background-color: @BGcolor;
   justify-content: center;
   font-size: calc(15px + 3vmin);
   color: #ffcb95;
