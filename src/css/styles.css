@@ -12,31 +12,23 @@
   position: relative;
   border-style: 20px solid white;
 }
-.BgImg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(119, 73, 23, 0.7) 10%, #116466 115%), url("../images/morrorock.jpg");
-  -webkit-filter: blur(2px);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: visibility 0s, opacity 0.5s linear;
-  z-index: -1;
+.bgImgContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
 }
 .nameTitle {
   position: absolute;
   left: 20px;
   bottom: 5px;
-  opacity: 0.75;
   border-bottom: solid black 2px;
-  z-index: -1;
+  z-index: 0;
   color: white;
-  width: 8vw;
-  font-size: 0.6rem;
+  font-size: 1rem;
   opacity: 0.2;
   max-height: 1rem;
   width: auto;
+  padding-bottom: 5px;
 }
 .buttonsContainer {
   display: flex;
@@ -50,12 +42,16 @@
   flex-flow: column;
   align-items: center;
 }
+html {
+  background-color: #2c3531;
+}
 body {
+  height: 125%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #2c3531;
+  background: linear-gradient(to bottom, rgba(119, 73, 23, 0.2) 10%, rgba(17, 100, 102, 0.2) 115%);
 }
 .workLink {
   color: white;
@@ -251,6 +247,7 @@ code {
   width: 0%;
 }
 .imgMain .entryImg {
+  min-height: 10vh;
   max-width: 60vw;
   max-height: 30vh;
   opacity: 1;

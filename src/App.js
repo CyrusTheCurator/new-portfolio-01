@@ -28,13 +28,17 @@ function App() {
         <header className="App-header">
           <Navbar />
         </header>
-        <div
-          className="BgImg"
-          style={{
-            visibility: displayStatus.visibility,
-            opacity: displayStatus.opacity,
-          }}
-        />
+        <div className="blurBox" />
+        {/* <div className="bgImgContainer">
+          {" "}
+          <div
+            className="BgImg"
+            style={{
+              visibility: displayStatus.visibility,
+              opacity: displayStatus.opacity,
+            }}
+          />
+        </div> */}
 
         <MainContentContainer />
       </div>
