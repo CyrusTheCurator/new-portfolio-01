@@ -17,8 +17,21 @@
   height: 100vh;
   position: fixed;
 }
+@keyframes fadeInImg {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .BgImg {
   position: fixed;
+  animation: ease-in 3s 1 fadeInImg;
+  animation-delay: -1.5s;
   min-width: 100vw;
   min-height: 100vh;
   max-height: 100vh;
