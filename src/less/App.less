@@ -112,10 +112,14 @@
     position: absolute;
     bottom: 25%;
   }
-  &:hover {
-    &:after {
-      animation: changeContent ease 6s;
-      animation-fill-mode: forwards;
+  @media screen {
+    @media (min-width: 1450px) {
+      &:hover {
+        &:after {
+          animation: changeContent ease 6s;
+          animation-fill-mode: forwards;
+        }
+      }
     }
   }
 }
@@ -139,10 +143,15 @@
   top: 20%;
   opacity: 1;
   transition: ease-in-out 0.5s;
+  white-space: nowrap;
+  left: 5%;
 }
 
 .copiedNotifHidden {
   position: absolute;
+  white-space: nowrap;
+  left: 0px;
+
   top: 20%;
   opacity: 0;
   transition: ease-in-out 0.5s;

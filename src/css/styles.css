@@ -92,9 +92,11 @@
   position: absolute;
   bottom: 25%;
 }
-.email:hover:after {
-  animation: changeContent ease 6s;
-  animation-fill-mode: forwards;
+@media screen and (min-width: 1450px) {
+  .email:hover:after {
+    animation: changeContent ease 6s;
+    animation-fill-mode: forwards;
+  }
 }
 @keyframes copiedAnim {
   0% {
@@ -112,9 +114,13 @@
   top: 20%;
   opacity: 1;
   transition: ease-in-out 0.5s;
+  white-space: nowrap;
+  left: 5%;
 }
 .copiedNotifHidden {
   position: absolute;
+  white-space: nowrap;
+  left: 0px;
   top: 20%;
   opacity: 0;
   transition: ease-in-out 0.5s;
