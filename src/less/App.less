@@ -79,8 +79,71 @@
   margin-bottom: 5vh;
 }
 
-.buttonHolder {
+@keyframes changeContent {
+  0% {
+    content: "Email";
+    opacity: 1;
+  }
+  2.5% {
+    opacity: 0;
+  }
+
+  10% {
+    content: "autumnal.zoe@gmail.com";
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    content: "autumnal.zoe@gmail.com";
+  }
+}
+
+.entryItem .buttonHolder {
   display: flex;
   flex-flow: column;
   align-items: center;
+  // transition: all 3s ease-in-out;
+}
+.email {
+  content: "yes";
+  &:after {
+    content: "Email";
+    position: absolute;
+    bottom: 25%;
+  }
+  &:hover {
+    &:after {
+      animation: changeContent ease 6s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes copiedAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.copiedNotif {
+  position: absolute;
+  top: 20%;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.copiedNotifHidden {
+  position: absolute;
+  top: 20%;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
 }
