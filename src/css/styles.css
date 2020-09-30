@@ -111,17 +111,23 @@
 }
 .copiedNotif {
   position: absolute;
-  top: 20%;
+  top: 05%;
   opacity: 1;
   transition: ease-in-out 0.5s;
   white-space: nowrap;
   left: 5%;
 }
+@media (max-width: 750px) {
+  .copiedNotif {
+    top: 10%;
+    font-size: 0.8rem;
+  }
+}
 .copiedNotifHidden {
   position: absolute;
   white-space: nowrap;
   left: 0px;
-  top: 20%;
+  top: 05%;
   opacity: 0;
   transition: ease-in-out 0.5s;
 }
