@@ -140,13 +140,14 @@
 
 .copiedNotif {
   position: absolute;
-  top: 05%;
+  top: 15%;
   opacity: 1;
   transition: ease-in-out 0.5s;
   white-space: nowrap;
   left: 5%;
 
-  @media (max-width: 750px) {
+  @media (max-width: 750px), (max-height: 800px) {
+    left: 2%;
     top: 10%;
     font-size: 0.8rem;
   }
@@ -157,7 +158,13 @@
   white-space: nowrap;
   left: 0px;
 
-  top: 05%;
+  top: 15%;
   opacity: 0;
   transition: ease-in-out 0.5s;
+  @media (max-width: 750px), (max-height: 800px) {
+    left: 2%;
+
+    top: 15%;
+    font-size: 0.8rem;
+  }
 }
