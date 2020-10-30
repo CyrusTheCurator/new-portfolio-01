@@ -15,9 +15,7 @@ function Home(props) {
               <div className="descriptionContainer">
                 <p>
                   Hi, my name is Zoe Brandt, and I'm a Full-Stack Web developer
-                  from Fresno, California. My long-term goals are to leverage
-                  software and hardware applications to modernize healthcare in
-                  order to pave a way for the patients of the future.
+                  from Fresno, California.
                 </p>
               </div>
             </div>
